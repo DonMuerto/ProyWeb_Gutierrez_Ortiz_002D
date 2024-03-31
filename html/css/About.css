@@ -8,11 +8,9 @@ p{
 
 .Menu{
     position: fixed;
-    height: 158px;
     width: 100%;
     top: 0px;
     left: 0px;
-    border-radius: 0;
     background-color:hsl(45, 44%, 48%);
     display: flex;
     justify-content: center;
@@ -25,35 +23,36 @@ p{
     font-size: 24px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 158px;
     width: 70%;
-    border: 1px solid;
+    gap: 15px;
 }
 
 .Logo{
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
-    width: 40%;
+    flex: 1;
 }
 
 .Inicio{
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    width: 20%;
+    flex: 0;
 }
 
 .Galeria{
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    width: 20%;
+    flex: 0;
 }
 
 .Acerca{
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    width: 20%;
+    flex: 0;
+}
+
+.Reserva{
+    display: flex;
+    justify-content: center;
+    flex: 0;
 }
