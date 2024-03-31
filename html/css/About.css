@@ -50,7 +50,7 @@ p{
 
 .slider-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border: 1px solid;
     width: 70%;
 } 
@@ -69,19 +69,6 @@ p{
     flex: 1 0 100%;
     scroll-snap-align: start;
 }
-
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-}
-
-
-
 
 
 
