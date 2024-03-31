@@ -38,23 +38,51 @@ p{
     gap: 20px;
 }
 
-.container-foto{
+.container{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 155px;
     height: 310px;
     width: 100%;
     border: 1px solid;
 }
 
-.Foto{
+.slider-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 310px;
     border: 1px solid;
+    width: 70%;
+} 
+
+.slider{
+    display: flex;
+    height: 280px;
+    width: 300px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
 }
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+
+
+
 
 
 
