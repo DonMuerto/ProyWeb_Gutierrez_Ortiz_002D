@@ -62,25 +62,27 @@ transition: opacity 400ms ease-in;
 }
 .Imagen1{
     position: relative;
-    left: 20%;
+    left: 10%;
+    padding-left: 8%;
 }
 .Imagen2{
     position: relative;
-    left: 40%;
+    left: 10%;
 }
 .Imagen3{
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 .Imagen4{
     position: relative;
-    left: 40%;
+    left: 10%;
+    padding-left: 8%;
 }
 .Imagen5{
     position: relative;
-    left: 20%;
+    left: 10%;
 }
 .Imagen6{
     position: relative;
-    left: 40%;
+    left: 10%;
 }
