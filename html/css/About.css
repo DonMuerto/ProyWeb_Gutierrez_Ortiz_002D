@@ -38,6 +38,25 @@ p{
     gap: 20px;
 }
 
+.container-foto{
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+    height: 310px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.Foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 310px;
+    border: 1px solid;
+}
+
+
 
 @media (max-width:800px) {
 
@@ -47,5 +66,13 @@ p{
 
     .Logo{
         flex: 1;
+    }
+
+}
+
+@media (max-width:580px) {
+    
+    .container-fotos{
+        margin-top: 168px;
     }
 }
