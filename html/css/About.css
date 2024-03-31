@@ -9,50 +9,43 @@ p{
 .Menu{
     position: fixed;
     width: 100%;
+    height: fit-content;
     top: 0px;
     left: 0px;
     background-color:hsl(45, 44%, 48%);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
 }
 
-.Letras{
+.caja{
     display: flex;
     font-size: 24px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    height: 158px;
     width: 70%;
-    gap: 15px;
+    gap: 25px;
 }
 
 .Logo{
+    flex: 2;
+}
+
+.Letras{
+    display: flex;
+    justify-content: space-around;
     flex: 1;
+    gap: 20px;
 }
 
-.Inicio{
-    display: flex;
-    justify-content: center;
-    flex: 0;
-}
 
-.Galeria{
-    display: flex;
-    justify-content: center;
-    flex: 0;
-}
+@media (max-width:800px) {
 
-.Acerca{
-    display: flex;
-    justify-content: center;
-    flex: 0;
-}
+    .Letras{
+        flex-wrap: wrap;
+    }
 
-.Reserva{
-    display: flex;
-    justify-content: center;
-    flex: 0;
+    .Logo{
+        flex: 1;
+    }
 }
