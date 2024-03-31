@@ -2,7 +2,7 @@
     position: relative;
     background-color: #E2E2DE;
     width: 100%;
-    margin-top: 158px;
+    margin-top: 150px;
 
 }
 .slide-inner {
@@ -112,7 +112,7 @@ body{
 }
 .Menu{
     position: fixed;
-    height: 158px;
+    height: 150px;
     width: 100%;
     top: 0px;
     left: 0px;
@@ -151,6 +151,15 @@ a:hover{
 }
 .footer{
     background: rgba(69, 68, 68, 0.80);
+    text-align: center;
+    color: white;
     width: 100%;
     height: 158px;
+}
+.Texto{
+    padding-top: 82px; 
+    padding-left: 225px; 
+    padding-right: 225px;
+    font-size: 20px;
+    line-height: 22.72px;
 }
