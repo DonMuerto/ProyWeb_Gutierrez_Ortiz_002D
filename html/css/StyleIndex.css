@@ -1,7 +1,9 @@
 .slide {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    background-color: #E2E2DE;
+    width: 100%;
     margin-top: 158px;
+
 }
 .slide-inner {
     position: relative;
@@ -44,10 +46,10 @@
     z-index: 10;
 }
 .slide-control.prev {
-    left: 2%;
+    left: 25%;
 }
 .slide-control.next {
-    right: 2%;
+    right: 25%;
 }
 .slide-control:hover {
     background: rgba(0, 0, 0, 0.8);
