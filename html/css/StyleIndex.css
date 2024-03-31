@@ -108,6 +108,7 @@
 body{
     margin: 0 auto;
     font-family: Georgia;
+    height: fit-content;
 
 }
 .Menu{
@@ -151,6 +152,8 @@ a:hover{
     height: 450px;
 }
 .footer{
+    position: relative;
+    bottom: 0px;
     background: rgba(69, 68, 68, 0.80);
     text-align: center;
     color: white;
@@ -163,14 +166,17 @@ a:hover{
     padding-right: 225px;
     font-size: 20px;
     line-height: 22.72px;
-    max-height: 450px;
+    min-height: 450px;
 }
 .CuadroTitulo{
     margin-top: 150px;
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     text-align: center;
     font-size: 61px;
     font-style: italic;
     z-index: 12;
+}
+.CuadroImagen{
+    position: relative;
 }
