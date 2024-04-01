@@ -6,6 +6,10 @@ p{
     font-size: 20px;
 }
 
+body{
+    background-color: FAF9F6;
+}
+
 .Menu{
     position: fixed;
     width: 100%;
@@ -16,6 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .caja{
@@ -48,11 +53,13 @@ p{
     border: 1px solid;
 }
 
-.slider-wrapper{
+.container-fotos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     border: 1px solid;
     width: 70%;
+    gap: 25px;
 } 
 
 .slider{
@@ -68,8 +75,47 @@ p{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
+    z-index: 1;
 }
 
+.mequieromatar{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 10px;
+    border: 1px solid;
+	z-index: 3;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider-nav a {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #9e8787;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+    border: 1px solid;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
 
 
 
@@ -84,10 +130,18 @@ p{
     }
 
 }
-
 @media (max-width:580px) {
     
-    .container-fotos{
+    .container{
         margin-top: 168px;
     }
+    .slide-circulo.hidden{
+        display: none;
+    }
+    .container-fotos{
+        width: fit-content;
+    }
+
 }
+
+

@@ -73,12 +73,6 @@
     display: inline-block;
     margin: 0 5px;
 }
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
 .slide-circulo:hover {
     color: #aaaaaa;
 }
