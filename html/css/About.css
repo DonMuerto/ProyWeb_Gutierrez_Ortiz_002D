@@ -10,6 +10,7 @@ body{
     background-color: FAF9F6;
 }
 
+/* Menu */
 .Menu{
     position: fixed;
     width: 100%;
@@ -42,7 +43,10 @@ body{
     flex: 1;
     gap: 20px;
 }
+/* Menu */
 
+
+/* Carrusel Fotos*/
 .container{
     display: flex;
     justify-content: center;
@@ -77,7 +81,9 @@ body{
     scroll-snap-align: start;
     z-index: 1;
 }
+/* Carrusel Fotos*/
 
+/* Navegacion de las fotos*/
 .mequieromatar{
     display: flex;
     justify-content: center;
@@ -116,9 +122,71 @@ body{
 .slider-nav a:hover {
 	opacity: 1;
 }
+/* Navegacion de las fotos*/
+
+/* Parrafos*/
+.container-caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E6D9B5;
+    border-radius: 15px;
+}
+
+.container-p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 1px solid;
+    gap: 60px;
+}
+
+.caja-p{
+    display: flex;
+    flex-grow: 0; /*0--> Los elementos NO crecen*/
+                  /*1--> Los elementos crecen*/
+    flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
+                    /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
+    flex-basis: 250px; /* Los elemento tiene un tamaño base*/
+    border: 1px solid;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* Parrafos*/
+
+/* Footer*/
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    left: 0px;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.container-footer-cajas{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    width: 70%;
+}
+
+.cajas-footer{
+    border: 1px solid;
+}
+/* Footer*/
 
 
 
+
+
+/* MEDIA*/
 @media (max-width:800px) {
 
     .Letras{
@@ -127,6 +195,11 @@ body{
 
     .Logo{
         flex: 1;
+    }
+
+    .container-p{
+        width: 100%;
+
     }
 
 }
