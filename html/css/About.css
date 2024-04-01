@@ -48,6 +48,16 @@ body{
     flex: 1;
     gap: 20px;
 }
+
+.menu-a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+.menu-a:hover{
+    color: rgb(70, 54, 2);
+    text-decoration: none;
+}
 /* Menu */
 
 
@@ -98,7 +108,7 @@ body{
 /* Carrusel Fotos*/
 
 /* Navegacion de las fotos*/
-.mequieromatar{
+.botone{
     display: flex;
     justify-content: center;
     border: 1px solid;
