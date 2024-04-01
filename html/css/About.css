@@ -58,14 +58,17 @@ body{
     margin-top: 155px;
     height: 310px;
     width: 100%;
+    border: 1px solid;
 }
 
 .container-fotos{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
     width: 70%;
     gap: 25px;
+    margin-top: 25px;   
 } 
 
 .slider{
@@ -83,17 +86,27 @@ body{
     scroll-snap-align: start;
     z-index: 1;
 }
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+    border: 1px solid;
+}
 /* Carrusel Fotos*/
 
 /* Navegacion de las fotos*/
 .mequieromatar{
     display: flex;
     justify-content: center;
+    border: 1px solid;
 }
 
 .slider-nav {
 	display: flex;
 	column-gap: 10px;
+    border: 1px solid;
 	z-index: 3;
 }
 
@@ -108,14 +121,6 @@ body{
 	background-color: #9e8787;
 	opacity: 0.75;
 	transition: opacity ease 250ms;
-}
-
-
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
 }
 
 .slider-nav a:hover {
@@ -135,11 +140,11 @@ body{
 
 .container-p{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
     width: 80%;
-    gap: 60px;
+    border: 1px solid;
 }
 
 .caja-p{
@@ -149,8 +154,8 @@ body{
     flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
                     /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
     flex-basis: 250px; /* Los elemento tiene un tamaño base*/
-    margin-top: 25px;
-    margin-bottom: 25px;
+    border: 1px solid;
+    margin: 25px;
 }
 /* Parrafos*/
 
@@ -164,6 +169,7 @@ body{
     left: 0px;
     height: fit-content;
     width: 100%;
+    border: 1px solid;
     border-radius: 15px;
 }
 
@@ -171,11 +177,13 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 1px solid;
     width: 70%;
 }
 
 .cajas-footer {
-    color: #ffffffc7;
+    color: #ffffffe0;
+    border: 1px solid;
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 1px;
@@ -188,6 +196,7 @@ body{
     .Letras{
         flex-wrap: wrap;
     }
+    
 
     .Logo{
         flex: 1;
@@ -199,7 +208,7 @@ body{
     }
 
 }
-@media (max-width:580px) {
+@media (max-width:600px) {
     
     .container{
         margin-top: 168px;
