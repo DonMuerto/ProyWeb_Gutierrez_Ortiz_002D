@@ -11,8 +11,19 @@ body{
     margin: 0 auto;
 }
 
+.h1{
+    font-style: italic;
+    font-weight: bold;
+}
 .h6{
     word-spacing: 5px;
+}
+
+.servicios{
+    margin-top: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Menu */
@@ -172,15 +183,13 @@ body{
 /* Footer*/
 .container-footer{
     position: relative;
+    margin-bottom: 0px;
     background-color: #454444;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0px;
-    left: 0px;
     height: fit-content;
     width: 100%;
-    border: 1px solid;
 }
 
 .container-footer-cajas{
@@ -200,6 +209,35 @@ body{
 }
 /* Footer*/
 
+/* Galeria*/
+.container-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FAF9F6;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    border: 1px solid;
+    gap: 25px;
+}
+
+.Foto{
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 1;
+    width: 200px;
+    height: 250px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+/**/
+
 /* MEDIA*/
 @media (max-width:800px) {
 
@@ -214,8 +252,12 @@ body{
 
     .container-p{
         width: 100%;
-
     }
+
+    .galeria{
+        width: 70%;
+    }
+
 
 }
 @media (max-width:600px) {
