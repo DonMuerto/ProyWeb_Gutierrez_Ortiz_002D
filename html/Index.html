@@ -81,39 +81,39 @@
     <script>
         let currentSlideIndex = 1;
 
-function showSlide(n) {
-    const slides = document.querySelectorAll('.slider img');
-    if (n > slides.length) {
-        currentSlideIndex = 1;
-    }
-    if (n < 1) {
-        currentSlideIndex = slides.length;
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('active');
-    }
-    slides[currentSlideIndex - 1].classList.add('active');
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slider img');
+            if (n > slides.length) {
+                currentSlideIndex = 1;
+            }
+            if (n < 1) {
+                currentSlideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slides[currentSlideIndex - 1].classList.add('active');
 
 
-    const navDots = document.querySelectorAll('.slider-nav a');
-    navDots.forEach(dot => dot.classList.remove('active'));
-    navDots[currentSlideIndex - 1].classList.add('active');
-}
+            const navDots = document.querySelectorAll('.slider-nav a');
+            navDots.forEach(dot => dot.classList.remove('active'));
+            navDots[currentSlideIndex - 1].classList.add('active');
+        }
 
-function prevSlide() {
-    showSlide(currentSlideIndex -= 1);
-}
+        function prevSlide() {
+            showSlide(currentSlideIndex -= 1);
+        }
 
-function nextSlide() {
-    showSlide(currentSlideIndex += 1);
-}
+        function nextSlide() {
+            showSlide(currentSlideIndex += 1);
+        }
 
-function currentSlide(n) {
-    showSlide(currentSlideIndex = n);
-}
+        function currentSlide(n) {
+            showSlide(currentSlideIndex = n);
+        }
 
-// Mostrar la primera imagen al cargar la página
-showSlide(currentSlideIndex);
+        // Mostrar la primera imagen al cargar la página
+        showSlide(currentSlideIndex);
     </script>
 </body>
 </html>

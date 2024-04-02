@@ -275,3 +275,45 @@ body{
 }
 
 
+.slider {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.slide-circulo.prev {
+    left: 0;
+}
+
+.slide-circulo.next {
+    right: 0;
+}
+
+
