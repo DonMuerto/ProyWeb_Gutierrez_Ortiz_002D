@@ -220,14 +220,23 @@ body{
 
 .galeria{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 60%;
     border: 1px solid;
     gap: 25px;
 }
 
+.caja-foto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid;
+}
+
 .Foto{
+    margin: 10px;
     display: flex;
     overflow: hidden;
     flex-shrink: 1;
@@ -254,9 +263,6 @@ body{
         width: 100%;
     }
 
-    .galeria{
-        width: 70%;
-    }
 
 
 }
