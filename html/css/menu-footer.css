@@ -1,0 +1,129 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+body{
+    background-color: #FAF9F6;
+    margin: 0 auto;
+}
+
+.h6{
+    word-spacing: 5px;
+}
+
+.servicios{
+    margin-top: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu */
+.Menu{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    top: 0px;
+    left: 0px;
+    background-color:hsl(45, 44%, 48%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.caja{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 25px;
+}
+
+.Logo{
+    flex: 2;
+}
+
+.Letras{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    gap: 20px;
+}
+
+.menu-a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+.menu-a:hover{
+    color: rgb(70, 54, 2);
+    text-decoration: none;
+}
+/* Menu */
+
+/* Footer*/
+.container-footer{
+    position: relative;
+    margin-bottom: 0px;
+    background-color: #454444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+.container-footer-cajas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 70%;
+}
+
+.cajas-footer {
+    color: #ffffffe0;
+    border: 1px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+/* Footer*/
+
+/* MEDIA*/
+@media (max-width:800px) {
+
+    .Letras{
+        flex-wrap: wrap;
+    }
+
+    .Logo{
+        flex: 1;
+    }
+
+    .container-p{
+        width: 100%;
+    }
+
+
+
+}
+@media (max-width:600px) {
+    
+    .container{
+        margin-top: 168px;
+    }
+    .slide-circulo.hidden{
+        display: none;
+    }
+    .container-fotos{
+        width: fit-content;
+    }
+
+}
