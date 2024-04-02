@@ -28,27 +28,24 @@
     </section>
     <section class="container">
         <div class="container-fotos">
-            <div class="slide-circulo hidden">
-                <div>
-                    <
-                </div>
+            <div class="slide-circulo.hidden">
+                <div class="slide-circulo prev" onclick="prevSlide()">&lt;</div>
             </div>
             <div class="slider">
-                <img id="slide-1" src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg">
+                <img id="slide-1" src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" class="active">
                 <img id="slide-2" src="img\9fe3f4b9-3212-44e6-87b3-83b03a9dc8d3.jpg">
                 <img id="slide-3" src="img\11e94fa6-a6c8-4fa0-bd69-4755ef558ae7.jpg">
             </div>
-            <div class="slide-circulo hidden">
-                <div>
-                    >
-                </div>
+            <div class="slide-circulo.hidden">
+                <div class="slide-circulo next" onclick="nextSlide()">&gt;</div>
+            </div>
         </div>
     </section>
     <div class="botone">
         <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
+            <a href="#" onclick="currentSlide(1)"></a>
+            <a href="#" onclick="currentSlide(2)"></a>
+            <a href="#" onclick="currentSlide(3)"></a>
         </div>
     </div>
     <br>
@@ -81,5 +78,42 @@
             </div>
         </div>
     </section>
+    <script>
+        let currentSlideIndex = 1;
+
+function showSlide(n) {
+    const slides = document.querySelectorAll('.slider img');
+    if (n > slides.length) {
+        currentSlideIndex = 1;
+    }
+    if (n < 1) {
+        currentSlideIndex = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+    slides[currentSlideIndex - 1].classList.add('active');
+
+
+    const navDots = document.querySelectorAll('.slider-nav a');
+    navDots.forEach(dot => dot.classList.remove('active'));
+    navDots[currentSlideIndex - 1].classList.add('active');
+}
+
+function prevSlide() {
+    showSlide(currentSlideIndex -= 1);
+}
+
+function nextSlide() {
+    showSlide(currentSlideIndex += 1);
+}
+
+function currentSlide(n) {
+    showSlide(currentSlideIndex = n);
+}
+
+// Mostrar la primera imagen al cargar la página
+showSlide(currentSlideIndex);
+    </script>
 </body>
 </html>

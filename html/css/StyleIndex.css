@@ -1,13 +1,65 @@
+/* Estilos para las flechas de control */
+.control-1,
+.control-2,
+.control-3 {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: block; /* Por defecto, mostrar las flechas */
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.control-1.prev,
+.control-2.prev,
+.control-3.prev {
+    left: 2%;
+}
+
+.control-1.next,
+.control-2.next,
+.control-3.next {
+    right: 2%;
+}
+
+.control-1:hover,
+.control-2:hover,
+.control-3:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+/* Ocultar las flechas de control en pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .control-1,
+    .control-2,
+    .control-3 {
+        display: none;
+    }
+}
+
+/* Otros estilos */
 .slide {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
+    border: 1px solid;
 }
 .slide-inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     overflow: hidden;
     width: 100%;
     height: calc( 300px + 3em);
+    flex:1;
 }
 .slide-open:checked + .slide-item {
     position: static;
@@ -16,47 +68,13 @@
 .slide-item {
     position: absolute;
     opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 .slide-item img {
     display: block;
     height: auto;
     max-width: 100%;
-}
-.slide-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-.slide-control.prev {
-    left: 2%;
-}
-.slide-control.next {
-    right: 2%;
-}
-.slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
+    z-index: 99;
 }
 .slide-indicador {
     list-style: none;
@@ -76,12 +94,14 @@
 .slide-circulo:hover {
     color: #aaaaaa;
 }
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
     color: #428bca;
 }
 #titulo {
@@ -94,10 +114,9 @@
     color: rgba(255, 255, 255, 1);
     font-family: 'Open Sans', sans-serif;
     z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-    -1px 0px 2px rgba(255, 255, 255, 0);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
-.CuadroTitulo{
+.CuadroTitulo {
     display: flex;
     width: 100%;
     height: 550px;
@@ -105,9 +124,9 @@
     align-items: center;
     justify-content: center;
 }
-.Titulo{
- border: 1px solid;
- padding-top: 150px;
- font-size: 61px;
- font-style: italic;
+.Titulo {
+    border: 1px solid;
+    padding-top: 150px;
+    font-size: 61px;
+    font-style: italic;
 }
