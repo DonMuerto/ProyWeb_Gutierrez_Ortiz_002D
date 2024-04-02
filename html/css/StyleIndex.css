@@ -1,48 +1,75 @@
-/* Carrusel Fotos*/
+.slider {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.slider img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.slide-circulo:hover{
+    border-radius: 50%;
+    backdrop-filter: blur(80px);
+    background: radial-gradient(circle , rgb(173, 149, 76, 0), rgba(167, 165, 161, 0.25));
+}
+
+.slide-circulo {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: #a18d55;
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: #FAF9F6;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.slide-circulo.prev {
+    left: 10px;
+}
+
+.slide-circulo.next {
+    right: 10px;
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 155px;
+    height: 310px;
     width: 100%;
 }
 
 .container-fotos{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 70%;
     gap: 25px;
-    margin-top: 45px;   
+    margin-top: 25px; 
 } 
 
-.slider{
-    display: flex;
-    height: 280px;
-    width: 300px;
-    flex-shrink: 0;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    border-radius: 15px;
-}
 
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    z-index: 1;
-}
-
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-/* Carrusel Fotos*/
-
-/* Navegacion de las fotos*/
 .botone{
     display: flex;
     justify-content: center;
@@ -70,7 +97,6 @@
 .slider-nav a:hover {
 	opacity: 1;
 }
-/* Navegacion de las fotos*/
 
 
 /* Parrafos*/

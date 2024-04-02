@@ -117,7 +117,10 @@ body{
     .container{
         margin-top: 168px;
     }
-    .slide-circulo.hidden{
+    .slide-circulo.prev{
+        display: none;
+    }
+    .slide-circulo.next{
         display: none;
     }
     .container-fotos{
