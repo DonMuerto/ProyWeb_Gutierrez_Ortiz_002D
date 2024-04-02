@@ -11,10 +11,6 @@ body{
     margin: 0 auto;
 }
 
-.h1{
-    font-style: italic;
-    font-weight: bold;
-}
 .h6{
     word-spacing: 5px;
 }
@@ -242,7 +238,7 @@ body{
     flex-shrink: 1;
     width: 200px;
     height: 250px;
-    border: 1px solid;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     border-radius: 15px;
 }
 /**/
@@ -253,7 +249,6 @@ body{
     .Letras{
         flex-wrap: wrap;
     }
-    
 
     .Logo{
         flex: 1;
