@@ -1,0 +1,22 @@
+.container-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.CuadroTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+}
+.Titulo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    font-size: 61px;
+    font-style: italic;
+}
