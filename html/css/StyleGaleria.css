@@ -94,7 +94,7 @@
 	box-shadow: 1px 1px 3px #000;
 }
 .close-reservar{
-	background: #606061;
+	background: #a5925de7;
 	color: #FFFFFF;
 	margin-top: 10px;
 	line-height: 25px;
@@ -113,4 +113,4 @@
 
 
 .close-cancelar:hover { background: #0c0f0fcb; }
-.close-reservar:hover { background: rgba(163, 27, 27, 0.658);}
+.close-reservar:hover { background: #d7ba65f5;}
