@@ -79,7 +79,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #E6D9B5;
 }
 
 .container-p{
@@ -88,6 +87,9 @@
     align-content: center;
     flex-wrap: wrap;
     width: 80%;
+    border-radius: 15px;
+    background-color: #E6D9B5;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 
 .caja-p{
