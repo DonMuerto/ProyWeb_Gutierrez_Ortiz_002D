@@ -73,6 +73,7 @@ body{
     position: relative;
     background-color: #454444;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -84,6 +85,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 65%;
+    
 }
 
 .cajas-footer {
@@ -91,6 +93,16 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 1px;
+    border: 1px solid;
+}
+.Footer-a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+.Footer-a:hover{
+    color: rgba(192,169,104,0.9);
+    text-decoration: none;
 }
 /* Footer*/
 
