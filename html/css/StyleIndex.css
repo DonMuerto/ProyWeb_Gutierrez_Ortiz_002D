@@ -4,6 +4,7 @@
     height: 280px;
     overflow: hidden;
     border-radius: 15px;
+    flex-shrink: 0;
 }
 
 .slider img {
