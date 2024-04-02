@@ -16,7 +16,6 @@ body{
 }
 
 .servicios{
-    margin-top: 158px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,12 +23,13 @@ body{
 
 /* Menu */
 .Menu{
+    background: linear-gradient(to bottom,rgba(192,169,104,0.9), rgba(192,169,104,0));
+    backdrop-filter: blur(80px);
     position: fixed;
     width: 100%;
     height: fit-content;
     top: 0px;
     left: 0px;
-    background-color:hsl(45, 44%, 48%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,10 +42,14 @@ body{
     justify-content: center;
     align-items: center;
     width: 70%;
-    gap: 25px;
+    gap: 30px;
 }
 
 .Logo{
+    display: flex;
+    height: 125px;
+    width: 125px;
+    margin: 20px;
     flex: 2;
 }
 
@@ -70,7 +74,6 @@ body{
 /* Footer*/
 .container-footer{
     position: relative;
-    margin-bottom: 0px;
     background-color: #454444;
     display: flex;
     justify-content: center;
@@ -81,15 +84,13 @@ body{
 
 .container-footer-cajas{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid;
-    width: 70%;
+    width: 65%;
 }
 
 .cajas-footer {
-    color: #ffffffe0;
-    border: 1px solid;
+    color: #ffffffef;
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 1px;

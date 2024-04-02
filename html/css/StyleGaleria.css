@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid;
     gap: 25px;
 }
 
@@ -21,7 +20,6 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    border: 1px solid;
 }
 
 .Foto{
@@ -67,6 +65,7 @@
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 }
+
 .close {
 	background: #606061;
 	color: #FFFFFF;

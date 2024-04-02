@@ -3,30 +3,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 155px;
-    height: 310px;
+    margin-top: 160px;
     width: 100%;
-    border: 1px solid;
 }
 
 .container-fotos{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
     width: 70%;
     gap: 25px;
-    margin-top: 25px;   
+    margin-top: 45px;   
 } 
 
 .slider{
     display: flex;
     height: 280px;
     width: 300px;
+    flex-shrink: 0;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    border-radius: 10px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    border-radius: 15px;
 }
 
 .slider img{
@@ -40,7 +39,6 @@
     cursor: pointer;
     display: block;
     font-size: 35px;
-    border: 1px solid;
 }
 /* Carrusel Fotos*/
 
@@ -48,13 +46,11 @@
 .botone{
     display: flex;
     justify-content: center;
-    border: 1px solid;
 }
 
 .slider-nav {
 	display: flex;
 	column-gap: 10px;
-    border: 1px solid;
 	z-index: 3;
 }
 
@@ -92,7 +88,6 @@
     align-content: center;
     flex-wrap: wrap;
     width: 80%;
-    border: 1px solid;
 }
 
 .caja-p{
@@ -102,7 +97,6 @@
     flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
                     /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
     flex-basis: 250px; /* Los elemento tiene un tamaño base*/
-    border: 1px solid;
     margin: 25px;
 }
 /* Parrafos*/
