@@ -3,6 +3,8 @@
     width: 300px;
     height: 280px;
     overflow: hidden;
+    border-radius: 15px;
+    flex-shrink: 0;
 }
 
 .slider img {
@@ -64,9 +66,12 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 70%;
+    height: 290px;
     gap: 25px;
     margin-top: 25px; 
+    border: 1px solid;
 } 
 
 
