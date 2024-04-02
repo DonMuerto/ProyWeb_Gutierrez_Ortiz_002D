@@ -111,11 +111,11 @@ body{
 }
 
 .slide-circulo.prev {
-    left: 0;
+    left: 10px;
 }
 
 .slide-circulo.next {
-    right: 0;
+    right: 10px;
 }
 
 .container{
@@ -129,7 +129,9 @@ body{
 }
 
 .container-fotos{
+    position: relative;
     display: flex;
+    align-content: center;
     justify-content: center;
     align-items: center;
     border: 1px solid;
@@ -286,7 +288,10 @@ body{
     .container{
         margin-top: 168px;
     }
-    .slide-circulo.hidden{
+    .slide-circulo.prev{
+        display: none;
+    }
+    .slide-circulo.next{
         display: none;
     }
     .container-fotos{
