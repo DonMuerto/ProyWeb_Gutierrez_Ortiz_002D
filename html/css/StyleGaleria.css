@@ -37,10 +37,14 @@
 
 .modalDialog {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	inset: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+	color: #a5a59f;
+	z-index: 20;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -52,15 +56,14 @@
 	pointer-events: auto;
 }
 .modalDialog > div {
+	border: 5px solid;
 	width: 400px;
 	position: relative;
-	margin: 10% auto;
+	margin: 30% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: radial-gradient(circle , rgba(255, 255, 255, 0), rgba(201, 197, 197, 0.418));
+	backdrop-filter: blur(80px);
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
