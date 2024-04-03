@@ -67,11 +67,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 290px;
     width: 70%;
+    height: 290px;
     gap: 25px;
     margin-top: 25px; 
-    border-radius: 15px;
 } 
 
 
@@ -115,7 +114,7 @@
 .container-p{
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 80%;
     border-radius: 15px;
@@ -125,6 +124,16 @@
 
 .caja-p{
     display: flex;
+    flex-grow: 1; /*0--> Los elementos NO crecen*/
+                  /*1--> Los elementos crecen*/
+    flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
+                    /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
+    flex-basis: 250px; /* Los elemento tiene un tamaño base*/
+    margin: 25px;
+}
+.caja-a{
+    display: flex;
+    flex-direction: column;
     flex-grow: 0; /*0--> Los elementos NO crecen*/
                   /*1--> Los elementos crecen*/
     flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
