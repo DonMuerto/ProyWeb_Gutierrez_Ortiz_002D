@@ -113,11 +113,10 @@
 
 .container-p{
     display: flex;
-    justify-content:space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    flex-shrink: 0;
-    width: 90%;
+    width: 80%;
     border-radius: 15px;
     background-color: #E6D9B5;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -126,6 +125,16 @@
 .caja-p{
     display: flex;
     flex-grow: 1; /*0--> Los elementos NO crecen*/
+                  /*1--> Los elementos crecen*/
+    flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
+                    /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
+    flex-basis: 250px; /* Los elemento tiene un tamaño base*/
+    margin: 25px;
+}
+.caja-a{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0; /*0--> Los elementos NO crecen*/
                   /*1--> Los elementos crecen*/
     flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
                     /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
