@@ -20,18 +20,70 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+	gap: 15px;
 }
 
 .Foto{
+	position: relative;
     margin: 10px;
     display: flex;
     overflow: hidden;
     flex-shrink: 1;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     border-radius: 15px;
+	transition: opacity 0.5s;
 }
+
+.Foto::after{
+	content: "Balayage";
+	font-size: 16px;
+	position: absolute;
+	display: none;
+	color: rgb(255, 255, 255);
+	background-color: rgba(192, 169, 104, 0.781);
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+	border-radius: 15px;
+	padding: 10px;
+	top: 45%;
+	left: 33%;
+}
+
+#Foto-2:hover::after{
+	content: "Correccion";
+}
+
+#Foto-3:hover::after{
+	content: "Babylights";
+}
+
+#Foto-4:hover::after{
+	left: 27%;
+	content: "Baño de color";
+}
+
+#Foto-5:hover::after{
+	left: 29%;
+	content: "Corte de pelo";
+}
+
+#Foto-6:hover::after{
+	left: 17%;
+	content: "Ttratamiento capilar";
+}
+
+
+.Foto:hover{
+	opacity: 0.8;
+	border: 5px rgba(192, 169, 104, 0.781) solid;
+}
+
+.Foto:hover::after{
+	display: block;
+}
+
+
 /*Galeria*/
 
 .modales{
