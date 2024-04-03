@@ -113,10 +113,11 @@
 
 .container-p{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    flex-shrink: 0;
+    width: 90%;
     border-radius: 15px;
     background-color: #E6D9B5;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -124,7 +125,7 @@
 
 .caja-p{
     display: flex;
-    flex-grow: 0; /*0--> Los elementos NO crecen*/
+    flex-grow: 1; /*0--> Los elementos NO crecen*/
                   /*1--> Los elementos crecen*/
     flex-shrink: 1; /*0--> Los elementos NO reducen su tamaño*/
                     /*1--> Los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis*/
