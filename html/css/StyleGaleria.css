@@ -76,7 +76,7 @@
 
 .Foto:hover{
 	opacity: 0.8;
-	border: 5px rgba(192, 169, 104, 0.781) solid;
+	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
 
 .Foto:hover::after{
