@@ -1,0 +1,38 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    height: 93px;
+    width: 100%;
+    background-color: antiquewhite;
+    position: fixed;
+    gap: 16px;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.container{
+    height: 93px;
+    width: 388px;
+}
+
+.bento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    height: 638px;
+    width: 100%;
+    background-color: antiquewhite;
+    flex-wrap: wrap
+}
+
+.grid{
+    position: relative;
+    margin-top: 93px;
+    border: 1px solid black;
+}
+
