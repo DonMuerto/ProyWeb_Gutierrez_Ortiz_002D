@@ -3,25 +3,24 @@
     display: grid;
     grid-template-areas:
         "header "
-        "content"
-        "footer"
+        "content "
+        "footer " 
     ;
 }
 
-div{
-    border: 1px solid black;
-    width: 388px;
-}
+div{border: 1px solid black;}
+
+
 
 /* header*/
 .container header{
     grid-area: header;
-    height: 90px;
     display: flex;
     justify-content: center;
-    gap: 16px   ;
-    
+    flex-direction: row;
+    gap: 16px;
 }
+
 
 .container a{
     text-decoration: none;
@@ -30,10 +29,13 @@ div{
 }
 
 .logo{
+    width: 388px;
+    min-width: 120px;
     display: flex;
 }
 
 .nav_center{
+    width: 388px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,26 +43,43 @@ div{
 }
 
 .nav_right{
+    width: 388px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
+/* header */
 
 
-
-
-/* header*/
-
+/* main */
 .container main{
     grid-area: content;
 }
+/* main */
 
+
+/* footer */
 .container footer{
     grid-area: footer;
-    height: 100px;
     background-color: bisque;
     display: flex;
     justify-content: center;
-    gap: 16px;
 }
+
+.cajas_footer{
+    width: 388px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajas_footer > *{
+    border: 1px solid black;
+    display: block;
+    width: fit-content;
+    margin: 0px 12px;
+}
+
+
+/* footer */

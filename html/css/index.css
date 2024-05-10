@@ -1,11 +1,11 @@
 .container main{
     grid-area: content;
-    margin: 46px 0 46px 0;
+    margin: 30px 0 46px 0;
     display: flex;
     justify-content: center;
 }
 
 .bento{
     height: 638px;
-    width: 1196px;
+    width: 1174px;
 }
