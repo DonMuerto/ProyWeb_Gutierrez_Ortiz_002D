@@ -4,6 +4,20 @@
     gap: 16px   ;
 }
 
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
 /* header*/
 header{
     display: flex;
@@ -17,17 +31,17 @@ header{
 }
 
 header .responsive{
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.9), rgba(192,169,104,0));
+    backdrop-filter: blur(80px);
     position: fixed;
 }
 
 .logo{
-    border: 1px solid black;
     display: flex;
     flex-basis: 388px;
 }
 
 .nav_center{
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +50,6 @@ header .responsive{
 }
 
 .nav_right{
-    border: 1px solid black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,18 +59,12 @@ header .responsive{
 /* header */
 
 
-/* main */
-.container main{
-    border: 1px solid black;
-}
-/* main */
-
-
 /* footer */
 
 footer{
     margin-top: 30px;
-    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     grid-area: footer;
     background-color: bisque;
     display: flex;
@@ -65,7 +72,6 @@ footer{
 }
 
 .cajas_footer{
-    border: 1px solid black;
     width: 388px;
     display: flex;
     flex-direction: column;
@@ -73,7 +79,6 @@ footer{
 
 .cajas_footer > *{
     padding: 2px;
-    border: 1px solid black;
     display: block;
     width: fit-content;
     margin: 0px 12px;
