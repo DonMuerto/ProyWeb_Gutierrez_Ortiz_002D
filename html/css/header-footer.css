@@ -1,16 +1,66 @@
 .container{
+    border: 1px solid black;
     display: grid;
+    grid-template-areas:
+        "header "
+        "content"
+        "footer"
+    ;
+}
+
+div{
+    border: 1px solid black;
+    width: 388px;
+}
+
+/* header*/
+.container header{
+    grid-area: header;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 16px   ;
     
 }
 
-.container header{
-    background-color: antiquewhite;
+.container a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.logo{
+    display: flex;
+}
+
+.nav_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+/* header*/
+
 .container main{
-    background-color: azure;
+    grid-area: content;
 }
 
 .container footer{
+    grid-area: footer;
+    height: 100px;
     background-color: bisque;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
