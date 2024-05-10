@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    
+}
+
+.container header{
+    background-color: antiquewhite;
+}
+
+.container main{
+    background-color: azure;
+}
+
+.container footer{
+    background-color: bisque;
+}
