@@ -21,29 +21,26 @@ main{
     border-right: 2px solid rgba(0, 0, 0, 0.411);
 }
 
-#balayage:hover{
-    opacity: 0.8;
+.contenedor_foto:hover{
 	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
-#correcion:hover{
+#balayage>a:hover{
     opacity: 0.8;
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
-#babylights:hover{
+#correcion>a:hover{
     opacity: 0.8;
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
-#bcolor:hover{
+#babylights>a:hover{
     opacity: 0.8;
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
-#corte:hover{
+#bcolor>a:hover{
     opacity: 0.8;
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
 }
-#tcapilar:hover{
+#corte>a:hover{
     opacity: 0.8;
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
+}
+#tcapilar>a:hover{
+    opacity: 0.8;
 }
 
 
@@ -66,7 +63,7 @@ main{
 	background: rgba(0,0,0,0.8);
 	color: #a5a59f;
 	z-index: 20;
-	opacity:0;
+    opacity: 0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
