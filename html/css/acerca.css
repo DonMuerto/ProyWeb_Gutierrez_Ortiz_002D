@@ -1,0 +1,96 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section:first-child{
+    margin-top: 30px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse; 
+    gap: 80px;
+}
+
+.fstock{
+    height: fit-content;
+    width: 440px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.about{
+    height: 242px;
+    width: 50%;
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.linea{
+    height: 5px;
+    width: 960px;
+    margin-top: 46px;
+    margin-bottom: 46px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    border-style:initial;
+}
+
+
+.section:last-child{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.francisca{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+.cajitas{
+    width: 100%;
+    display: flex;
+}
+.cajitas > div{
+    font-size: 12px; 
+    padding: 10px;
+    flex: 1;
+}
+
+.fotos{
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foto_link{
+    display: block;
+    width: 234px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); 
+    border-radius: 15px;
+}
+.linq{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px; 
+    text-align: center; 
+    margin-top: 6px; 
+    text-decoration:none; 
+    color:black
+}
+
+@media (max-width:976px){
+    .linea{
+        width: 480px;
+    }
+}
