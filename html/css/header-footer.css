@@ -1,13 +1,24 @@
+*{
+    font-family:'Times New Roman', Times, sans-serif;
+}
+h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+body{
+    background-color: #FAF9F7;
+}
+
 .responsive{
     width: 80%;
     display: flex;
     justify-content: center;
     gap: 16px;
 }
-body{
-    background-color: rgb(224,224,224);
-}
-
 
 /* header*/
 header{
@@ -59,10 +70,17 @@ header .responsive{
 }
 /* header */
 
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main*/
 
 /* footer */
 footer{
-    margin-top: 30px;
+    margin-top: 46px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     grid-area: footer;
