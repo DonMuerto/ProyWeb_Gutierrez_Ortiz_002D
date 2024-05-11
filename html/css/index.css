@@ -1,3 +1,15 @@
+*{
+    font-family:'Times New Roman', Times, sans-serif;
+}
+h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -7,83 +19,129 @@ main{
 
 .bento{
     width: 80%;
+    max-width: 1172px;
+    max-height: 638px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 108px repeat(4,  1fr);
     gap: 16px;
     overflow: hidden;
 }
 
-.carrusel{
-    overflow: hidden;
-    width: 388px;
-    height: 584px;
+.carrusel_b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
     margin-left: 12px;
     border-radius: 10px;
     grid-column: 1/2;
-    grid-row: 1/5;
+    grid-row: 1/4;
+}
+.carrusel_b img{
+    border-radius: 10px;
+    max-height: 690px;
+    min-width: 388px;
+    height: 100%;
+    width: 100%;
+}
+.botone{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 134px;
+    height: 34px;
+    border-radius: 16px;
+    background: #2b2929;
+    color: white;
+    margin-top: 16px;
 }
 
 .titulo{
-    margin-left: 12px;
+    max-height: 106px;
+    margin-right: 12px;
     border-radius: 10px;
     grid-column: 2/4;
-    grid-row: 1/2;
+    grid-row: span 1;
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: rgb(244,244,244);
 }
 
 
 .reserva{
-    margin-left: 12px;
+    height: 288px;
+    margin-right: 12px;
     border-radius: 10px;
     grid-column: 2/4;
     grid-row: 2/4;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: rgb(244,244,244);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
 .cajas{
-    height: 245px;
-    width: 306px;
+    width: 50%;
+}
+.cajas:first-child{
     text-align: center;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .cajas button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12px;
     width: 134px;
     height: 34px;
-    flex-shrink: 0;
     border-radius: 14px;
     background: #2b2929;
     text-align: center;
     color: white;
 }
+.cajas:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.carrusel_s{
+    width: 264px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+}
+.carrusel_s img{
+    border-radius: 10px;
+}
 
 
 .parrafo{
-    margin-left: 12px;
     border-radius: 10px;
     grid-column: 2/3;
     grid-row: 4/6;
     font-size: 16px;
     padding: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244,244,244);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
 
-
 .parrafo2{
-    margin-left: 12px;
     border-radius: 10px;
     grid-column: 3/4;
     grid-row: 4/6;
     font-size: 16px;
     padding: 16px;
-}
-
-.botone{
-    width: 200px;
-    margin-left: 12px;
-    border-radius: 10px;
-    grid-column: 1/2;
-    grid-row: 5/6;
-    justify-self: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244,244,244);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
 
