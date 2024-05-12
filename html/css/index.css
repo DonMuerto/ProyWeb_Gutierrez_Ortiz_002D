@@ -80,8 +80,8 @@ main{
     flex-direction: column;
 }
 .cajas button{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 134px;
     height: 34px;
     border-radius: 14px;

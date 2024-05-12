@@ -10,6 +10,10 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 16px ;
+	grid-template-areas: 
+		"balayage correcion babylights"
+		"bcolor corte tcapilar"
+	;
 }
 
 .contenedor_foto{
@@ -21,28 +25,88 @@ main{
     border-right: 2px solid rgba(0, 0, 0, 0.411);
 }
 
-.contenedor_foto:hover{
-	outline: 5px rgba(192, 169, 104, 0.781) solid;
+.balayage{
+	grid-area: balayage;
+	border-radius: 10px;
+	z-index: 2;
 }
-#balayage>a:hover{
-    opacity: 0.8;
-}
-#correcion>a:hover{
-    opacity: 0.8;
-}
-#babylights>a:hover{
-    opacity: 0.8;
-}
-#bcolor>a:hover{
-    opacity: 0.8;
-}
-#corte>a:hover{
-    opacity: 0.8;
-}
-#tcapilar>a:hover{
-    opacity: 0.8;
+.balayage+section{
+	grid-area: balayage;
 }
 
+.correccion{
+	grid-area: correcion;
+	border-radius: 10px;
+	z-index: 2;
+}
+.correccion+section{
+	grid-area: correcion;
+}
+
+.babylights{
+	grid-area: babylights;
+	border-radius: 10px;
+	z-index: 2;
+}
+.babylights+section{
+	grid-area: babylights;
+}
+
+.bcolor{
+	grid-area: bcolor;
+	border-radius: 10px;
+	z-index: 2;
+}
+.bcolor+section{
+    grid-area: bcolor;
+}
+
+.corte{
+	grid-area: corte;
+	border-radius: 10px;
+	z-index: 2;
+}
+.corte+section{
+    grid-area: corte;
+}
+
+.tcapilar{
+	grid-area: tcapilar;
+	border-radius: 10px;
+	z-index: 2;
+}
+.tcapilar+section	{
+    grid-area: tcapilar;
+}
+
+.linqfoto{
+	border-radius: 10px;
+	display: inline-block; 
+	width:100%; 
+	height: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items:end;
+	transition: outline 0.2s ease;
+}
+.linqfoto span{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 34px;
+    background: rgba(209, 206, 200, 0.938);
+    color: rgb(17, 16, 16);
+	padding: 6px;
+	display: flex;
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.linqfoto:hover{
+	outline: 5px rgba(192, 169, 104, 0.781) solid;
+}
 
 /* modal */
 .modales{
@@ -126,3 +190,30 @@ main{
 .close-cancelar:hover { background: #0c0f0fcb; }
 .close-reservar:hover { background: #d7ba65f5;}
 /* modal */
+
+@media (width < 800px){
+    .bento{
+		grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"balayage correcion "
+		"babylights bcolor "
+		"corte tcapilar"
+	;
+	}
+}
+
+@media (width < 550px){
+    .bento{
+		grid-template-columns: 1fr;
+    	grid-template-rows: repeat(6, 1fr);
+		grid-template-areas: 
+		"balayage"
+		"correcion" 
+		"babylights"
+		"bcolor" 
+		"corte"
+		"tcapilar"
+	;
+	}
+}

@@ -38,7 +38,7 @@ header{
     height: 90px;
     backdrop-filter: blur(100px);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
 
