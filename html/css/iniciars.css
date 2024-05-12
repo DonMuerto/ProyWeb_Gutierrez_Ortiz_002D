@@ -1,0 +1,106 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cont_form{
+    height: fit-content;
+    width: 596px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: rgb(244,244,244);
+}
+
+.formu{
+    margin: 78px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 106px repeat(4, 76px) ;
+    grid-template-areas: 
+        "titu"
+        "correo"
+        "contrasena1"
+        "olre"
+        "button"
+        ;
+    gap: 16px;
+}
+
+.linput{
+    margin-top: 16px;
+    height: 76px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.inputStyle{
+    height: 46px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 6px;
+}
+.titu{
+    width: 100%;
+    grid-area: titu;
+    font-size: 48px;
+}
+.correo{
+    grid-area: correo;
+}
+.contrasena1{
+    grid-area: contrasena1;
+}
+.olre{
+    margin-top: 16px;
+    grid-area: olre;
+    display: flex;
+    flex-direction: column;
+}
+.olre a{
+    color:black;
+    text-decoration: none;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button{
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 144px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 14px;
+    background: #2b2929;
+    text-align: center;
+    color: white;
+}
+
+.circle{
+    height: 354px;
+    width: 354px;
+    overflow: hidden;
+    border-radius: 354px;
+    box-shadow: 15px 15px 2px 0 rgba(0, 0, 0, 0.356);;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: rgb(244,244,244);
+}

@@ -72,7 +72,7 @@ main{
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
 .cajas{
-    width: 50%;
+    width: 100%;
 }
 .cajas:first-child{
     text-align: center;
@@ -259,7 +259,8 @@ main{
     }
 
     .reserva{
-        width: auto;
+        justify-self: center;
+        width: fit-content;
         height: 100%;
         display: flex;
         justify-content: center;

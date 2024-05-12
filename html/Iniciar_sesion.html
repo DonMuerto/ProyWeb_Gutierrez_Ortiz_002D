@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/iniciars.css">
 </head>
-<body>
+<body style="margin: 0 auto;">
     <header>
         <div style="height: 90px;"></div>
         <div class="blure"></div>
@@ -22,10 +23,41 @@
             </div>
             <div class="nav_right">
                 <a href="Registrarse.html">Registrarse</a>
-                <a style="margin-right: 12px;" href="Iniciar.html">Iniciar sesión</a>
+                <a style="margin-right: 12px;" href="Iniciar_sesion.html">Iniciar sesión</a>
             </div>
         </div>
     </header>
+
+    <main>
+        <section class="container">
+            <div class="cont_form">
+                <form method="post" id="formulario" class="formu">
+                    <div class="titu linput">
+                        <span>Iniciar Sesión</span>
+                    </div>
+                    <div class="correo linput">
+                        <label for="correo">Correo</label>
+                        <input type="text" id="correo" class="inputStyle">
+                    </div>
+                    <div class="contrasena1 linput">
+                        <label for="contrasena1">Contraseña</label>
+                        <input type="text" id="contrasena1" class="inputStyle">
+                    </div>
+                    <div class="olre">
+                        <span>Olvide mi contraseña</span>
+                        <a href="Registrarse.html">Registrarse<img style="height: 12px; width: 16px;" src="img/Arrow 1.png" alt="flecha"></a>
+                    </div>
+                    <div class="button">
+                        <input class="button" type="button" value="Iniciar">
+                    </div>
+                </form>
+            </div>
+            <div class="circle">
+                    <img src="" alt="corte">
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="responsive">
             <div style="margin-left: 12px;" class="cajas_footer">
