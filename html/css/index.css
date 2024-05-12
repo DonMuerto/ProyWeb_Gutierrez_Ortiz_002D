@@ -12,29 +12,33 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 108px repeat(4,  1fr);
+    grid-template-areas: 
+        "carrusel_b titulo titulo"
+        "carrusel_b reserva reserva"
+        "carrusel_b reserva reserva"
+        "carrusel_b parrafo1 parrafo2"
+        "carrusel_b parrafo1 parrafo2"
+    ;
     gap: 16px;
     overflow: hidden;
 }
 
 .carrusel_b{
+    grid-area: carrusel_b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: fit-content;
     margin-left: 12px;
     border-radius: 10px;
-    grid-column: 1/2;
-    grid-row: 1/4;
 }
 .carrusel_b img{
     border-radius: 10px;
-    max-height: 690px;
-    min-width: 388px;
-    height: 100%;
-    width: 100%;
+    height: 680px;
+    width: 388px;
 }
 .botone{
+    grid-area: botone;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 134px;
     height: 34px;
@@ -45,11 +49,10 @@ main{
 }
 
 .titulo{
-    max-height: 106px;
+    grid-area: titulo;
+    height: 100%;
     margin-right: 12px;
     border-radius: 10px;
-    grid-column: 2/4;
-    grid-row: span 1;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
@@ -58,11 +61,10 @@ main{
 
 
 .reserva{
+    grid-area: reserva;
     height: 288px;
     margin-right: 12px;
     border-radius: 10px;
-    grid-column: 2/4;
-    grid-row: 2/4;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(244,244,244);
@@ -107,9 +109,8 @@ main{
 
 
 .parrafo{
+    grid-area: parrafo1;
     border-radius: 10px;
-    grid-column: 2/3;
-    grid-row: 4/6;
     font-size: 16px;
     padding: 16px;
     overflow: hidden;
@@ -121,9 +122,8 @@ main{
 }
 
 .parrafo2{
+    grid-area: parrafo2;
     border-radius: 10px;
-    grid-column: 3/4;
-    grid-row: 4/6;
     font-size: 16px;
     padding: 16px;
     overflow: hidden;
@@ -134,3 +134,90 @@ main{
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
 
+
+
+@media (width < 1200px){
+    .bento{
+		grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 108px repeat(5,  1fr);
+		grid-template-areas: 
+        "titulo titulo"
+        "carrusel_b reserva"
+        "carrusel_b reserva"
+        "carrusel_b reserva"
+        "parrafo1 parrafo1"
+        "parrafo2 parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    .carrusel_b img{
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .titulo h1{
+        font-size: 40px;
+    }
+
+    .reserva{
+        width: fit-content;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .cajas{
+        width: 80%;
+        margin: 16px;
+    }
+    .carrusel_s{
+        margin-bottom: 30px;
+    }
+}
+
+@media (width < 920px){
+    .bento{
+		grid-template-columns: 1fr 1fr;
+        grid-template-rows: 108px repeat(3,  1fr);
+		grid-template-areas: 
+        "titulo titulo"
+        "reserva reserva"
+        "carrusel_b parrafo1"
+        "carrusel_b parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    .carrusel_b{
+        height: auto;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 12px;
+        
+    }
+    .carrusel_b img{
+        min-width: 300px;
+        max-height: 600px;
+    }
+
+    .titulo h1{
+        font-size: 40px;
+    }
+
+    .reserva{
+        width: auto;
+        height: 100%;
+    }
+    .cajas{
+        width: 250px;
+    }
+    .carrusel_s img{
+        border-radius: 10px;
+    }
+
+    .parrafo{
+        height: auto;
+    }
+    .parrafo2{
+        height: auto;
+    }
+}
