@@ -216,8 +216,73 @@ main{
 
     .parrafo{
         height: auto;
+        margin-right: 12px;
     }
     .parrafo2{
         height: auto;
+        margin-right: 12px;
+    }
+}
+
+@media (width < 810px){
+    .bento{
+		grid-template-columns: 1fr ;
+        grid-template-rows: 108px repeat(6,  1fr);
+		grid-template-areas: 
+        "titulo "
+        "reserva"
+        "reserva"
+        "carrusel_b"
+        "carrusel_b"
+        "parrafo1"
+        "parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    .carrusel_b{
+        height: auto;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 12px;
+    }
+    .carrusel_b img{
+        height: auto;
+        width: auto;
+    }
+    .botone{
+        display: none;
+    }
+
+    .titulo h1{
+        font-size: 40px;
+    }
+
+    .reserva{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cajas{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrusel_s img{
+        border-radius: 10px;
+    }
+
+    .parrafo{
+        height: auto;
+        margin-right: 12px;
+    }
+    .parrafo2{
+        height: auto;
+        margin-right: 12px;
     }
 }
