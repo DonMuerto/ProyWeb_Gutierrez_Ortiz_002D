@@ -33,9 +33,10 @@ header{
 }
 
 .blure{
+    top: 0;
     width: 100%;
     background-color: rgba(244, 244, 244, 0.808);
-    height: 90px;
+    height: 100px;
     backdrop-filter: blur(100px);
     position: fixed;
     z-index: 3;
