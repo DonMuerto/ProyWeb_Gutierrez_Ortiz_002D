@@ -70,14 +70,6 @@ header .responsive{
 }
 /* header */
 
-/* main */
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* main*/
-
 /* footer */
 footer{
     margin-top: 46px;
