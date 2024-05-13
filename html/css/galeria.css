@@ -104,7 +104,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	transition: all 0.2s ease;
+	transition: all 0.1s ease;
 }
 .linqfoto:hover span{
 	border-radius: 0;
