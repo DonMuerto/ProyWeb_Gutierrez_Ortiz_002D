@@ -1,16 +1,16 @@
 /* validar */
 
 .formulario_grupo-correcto{
-    outline: 3px solid rgb(196, 252, 112);
+    outline: 3px solid #119200e7;
 }
 
 .formulario_grupo-incorrecto{
-    outline: 3px solid rgb(201, 157, 157);
+    outline: 3px solid #F66060;
 }
 
 .formulario_input-error{
     margin-top: 0;
-    color:brown; 
+    color:#8a0505; 
     font-size:small;
 	display: none;
 }

@@ -10,7 +10,13 @@ h2{
     font-weight: 400;
 }
 body{
-    background-color: #FAF9F7;
+    background-color:#FAF5F4;
+}
+.inputStyle{
+    background-color:#FAF5F4;
+}
+.buttonStyle{
+    background-color: #490305c9;
 }
 
 
@@ -36,7 +42,7 @@ header{
 .blure{
     top: 0;
     width: 100%;
-    background-color: rgba(244, 244, 244, 0.808);
+    background-color: #FAF5F4;
     height: 100px;
     backdrop-filter: blur(100px);
     position: fixed;
@@ -83,7 +89,7 @@ footer{
     border-top-right-radius: 20px;
     grid-area: footer;
     border-top: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: rgb(244,244,244);
+    background-color: #FAF5F4;
     display: flex;
     justify-content: center;
 }
@@ -142,7 +148,7 @@ footer{
     }
 
     #menuToggle a:hover{
-        color: tomato;
+        color: #DD7D6C;
     }
 
 
@@ -228,5 +234,5 @@ footer{
     
 }
 .responsive a:hover{
-    color: tomato;
+    color: #DD7D6C;
 }

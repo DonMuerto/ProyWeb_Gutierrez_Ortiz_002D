@@ -43,7 +43,7 @@ main{
     width: 134px;
     height: 34px;
     border-radius: 16px;
-    background: #2b2929;
+    background:#372825;
     color: white;
     margin-top: 16px;
 }
@@ -56,7 +56,7 @@ main{
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: rgb(244,244,244);
+    background-color: #E1D2CF;
 }
 
 
@@ -67,7 +67,7 @@ main{
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(244,244,244);
+    background-color: #E1D2CF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
@@ -87,7 +87,7 @@ main{
     width: 134px;
     height: 34px;
     border-radius: 14px;
-    background: #2b2929;
+    background:#372825;
     text-align: center;
     color: white;
 }
@@ -116,7 +116,7 @@ main{
     overflow: hidden;
     display: flex;
     align-items: center;
-    background-color: rgb(244,244,244);
+    background-color: #E1D2CF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
@@ -129,7 +129,7 @@ main{
     overflow: hidden;
     display: flex;
     align-items: center;
-    background-color: rgb(244,244,244);
+    background-color: #E1D2CF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
@@ -156,8 +156,11 @@ main{
         height: 100%;
     }
 
-    .titulo h1{
-        font-size: 40px;
+    .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
     }
 
     .reserva{

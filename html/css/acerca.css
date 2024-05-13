@@ -38,7 +38,7 @@ main{
     width: 960px;
     margin-top: 46px;
     margin-bottom: 46px;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: #DACBC8;
     border-radius: 10px;
     border-style:initial;
 }
@@ -87,6 +87,9 @@ main{
     margin-top: 6px; 
     text-decoration:none; 
     color:black
+}
+.linq:hover{
+    color: #DD7F6E;
 }
 
 

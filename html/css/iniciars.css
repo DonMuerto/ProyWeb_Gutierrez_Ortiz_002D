@@ -20,7 +20,7 @@ main{
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: rgb(244,244,244);
+    background-color: #E1D2CF;
 }
 
 .formu{
@@ -92,7 +92,7 @@ main{
     height: 60px;
     font-size: 16px;
     border-radius: 14px;
-    background: #2b2929;
+    background: #372825;
     text-align: center;
     color: white;
 }
