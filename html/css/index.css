@@ -23,6 +23,7 @@ main{
     overflow: hidden;
 }
 
+/* carrusel */
 .carrusel_b{
     grid-area: carrusel_b;
     display: flex;
@@ -32,14 +33,27 @@ main{
     margin-left: 12px;
     border-radius: 10px;
 }
-.carrusel_b img{
+.slider-wrapper{
+    overflow: hidden;
     border-radius: 10px;
+}
+.slider{
     height: 680px;
     width: 388px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+    flex: 1 0 100%;
 }
 .botone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
     grid-area: botone;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 134px;
     height: 34px;
     border-radius: 16px;
@@ -47,6 +61,21 @@ main{
     color: white;
     margin-top: 16px;
 }
+.botone a{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.botone a:hover{
+    opacity: 1;
+}
+
+/* carrusel */
+
 
 .titulo{
     grid-area: titulo;
