@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/validar.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/iniciars.css">
 </head>
@@ -51,20 +52,34 @@
                     <div class="titu linput">
                         <span>Iniciar Sesión</span>
                     </div>
-                    <div class="correo linput">
-                        <label for="correo">Correo</label>
-                        <input type="text" id="correo" class="inputStyle">
+                    <div class="correo">
+                        <div id="grupo__email">
+                            <div class="linput">
+                                <label for="email">Correo Electronico</label>
+                                <input type="text" id="email" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener el formato correcto*</p>
+                        </div>
                     </div>
-                    <div class="contrasena1 linput">
-                        <label for="contrasena1">Contraseña</label>
-                        <input type="text" id="contrasena1" class="inputStyle">
+                    <div class="contrasena1">
+                        <div id="grupo__password">
+                            <div class="linput">
+                                <label for="password">Contraseña</label>
+                                <input type="password" id="password" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener un largo de 4 a 12 digitos*</p>
+                        </div>
                     </div>
                     <div class="olre">
                         <span>Olvide mi contraseña</span>
                         <a href="Registrarse.html">Registrarse<img style="height: 12px; width: 16px;" src="img/Arrow 1.png" alt="flecha"></a>
                     </div>
                     <div class="button">
-                        <input class="button" type="button" value="Iniciar">
+                        <div>
+                            <input type="submit" onclick="Enviar()" value="Crear Cuenta" class="buttonStyle">
+                        </div>
+                        <p class="formulario__mensaje" id="formulario__mensaje"><b>Error:</b> Usuario no encontrado. </p>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Usted a ingresado exitosamente!</p>
                     </div>
                 </form>
             </div>
@@ -106,5 +121,7 @@
             </div>
         </div>   
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript\iniciar.js"></script>
 </body>
 </html>

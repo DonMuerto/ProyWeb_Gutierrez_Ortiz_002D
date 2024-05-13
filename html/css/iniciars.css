@@ -81,7 +81,12 @@ main{
 }
 
 .button{
-    margin-top: 0;
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.buttonStyle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 144px;
     height: 60px;
