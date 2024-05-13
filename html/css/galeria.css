@@ -133,8 +133,8 @@ main{
 	align-items: center;
 	text-align: center;
 	inset: 0;
-	background: rgba(0,0,0,0.8);
-	color: #a5a59f;
+	background: #faf5f4cc;
+	color: black;
 	z-index: 20;
     opacity: 0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -146,12 +146,28 @@ main{
 	opacity:1;
 	pointer-events: auto;
 }
+.modales h2{
+	font-size: 36px;
+	font-weight: 600;
+}
+.modales h3{
+	margin-top: 0;
+	font-size: 20px;
+	border: 2px solid; 
+	border-radius: 5px; 
+	padding: 3px
+}
+.modales p{
+	font-size: 16px;
+	margin: 20px 50px;
+}
+
 .modalDialog > div {
-	border: 5px solid;
-	width: 400px;
+	border: 1px solid black;
+	width: 350px;
+	height: fit-content;
 	position: relative;
 	margin: 30% auto;
-	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: radial-gradient(circle , rgba(255, 255, 255, 0), rgba(201, 197, 197, 0.418));
 	backdrop-filter: blur(80px);
@@ -169,35 +185,44 @@ main{
 	position: relative;
 	text-align: center;
 	width: 100px;
+	padding: 2px;
+	margin-bottom: 4px;
 	text-decoration: none;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	transition: all 0.2s ease;
 }
 .close-reservar{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: #a5925de7;
+	background: #372825;
 	color: #FFFFFF;
 	margin-top: 10px;
+	margin-bottom: 36px;
 	line-height: 25px;
 	position: relative;
 	text-align: center;
 	width: 100px;
+	padding: 2px;
 	text-decoration: none;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	transition: all 0.1s ease;
 }
 
 
-.close-cancelar:hover { background: #0c0f0fcb; }
-.close-reservar:hover { background: #d7ba65f5;}
+.close-cancelar:hover { 
+	outline: 3px solid #79554f;
+	background: #79554f; 
+	font-size: 18px;
+
+}
+.close-reservar:hover { 
+	outline: 3px solid #DC9A8E;
+	background: #DC9A8E;
+	font-size: 18px;
+}
 /* modal */
 
 @media (width < 800px){
