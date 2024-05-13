@@ -51,53 +51,108 @@
                     <div class="isesion">
                         <span style="width:fit-content;">¿Ya tienes una cuenta?</span>
                         <a href="Iniciar_sesion.html" style="text-decoration:none; color:rgb(92,90,90)"><strong>Iniciar sesión</strong></a>
-                        <a href="Iniciar_sesion.html"><img style="height: 12px; width: 16px;" src="img/Arrow 1.png" alt="flecha"></a>
+                        <a href="Iniciar_sesion.html"><img style="height: 12px; width: 16px;" src="img/Arrow 1.png"></a>
                     </div>
                     <div class="titu linput">
                         <span>Crear Cuenta</span>
                     </div>
-                    <div class="nombre linput">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="inputStyle">
+                    <div class="nombre">
+                        <div id="grupo__nombre">
+                            <div class="linput">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener entre 3 y 20 caracteres *</p>
+                        </div>
                     </div>
-                    <div class="genero linput">
-                        <label for="genero">Género</label>
-                        <input type="text" id="genero" class="inputStyle">
+
+                    <div class="genero">
+                        <div class="linput">
+                            <label for="Genero">Género</label>
+                            <select id="Genero" class="inputStyle" required>
+                            <option value="Otro">Otro</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="papellido linput">
-                        <label for="papellido">Apellido Paterno</label>
-                        <input type="text" id="papellido" class="inputStyle">
+
+                    <div class="papellido">
+                        <div id="grupo__paterno">
+                            <div class="linput">
+                                <label for="paterno">Apellido Paterno</label>
+                                <input type="text" id="paterno" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener entre 3 y 20 caracteres*</p>
+                        </div>
                     </div>
-                    <div class="mapellido linput">
-                        <label for="mapellido">Apellido Materno</label>
-                        <input type="text" id="mapellido" class="inputStyle">
+
+                    <div class="mapellido" >
+                        <div id="grupo__materno">
+                            <div class="linput">
+                                <label for="materno">Apellido Materno</label>
+                                <input type="text" id="materno" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener entre 3 y 20 caracteres*</p>
+                        </div>
                     </div>
-                    <div class="correo linput">
-                        <label for="correo">Correo</label>
-                        <input type="text" id="correo" class="inputStyle">
+                    
+                    <div class="correo">
+                        <div id="grupo__email">
+                            <div class="linput">
+                                <label for="email">Correo Electronico</label>
+                                <input type="text" id="email" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener el formato correcto*</p>
+                        </div>
                     </div>
-                    <div class="telefono linput">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" id="telefono" class="inputStyle">
+                    <div class="telefono">
+                        <div id="grupo__celular">
+                            <div class="linput">
+                                <label for="celular">Telefono</label>
+                                <input type="text" id="celular" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener un largo de 9 numeros</p>
+                        </div>
                     </div>
-                    <div class="domicilio linput">
-                        <label for="domicilio linput">Domicilio</label>
-                        <input type="text" id="domicilio" class="inputStyle">
+
+                    <div class="domicilio">
+                        <div class="linput">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" id="domicilio" class="inputStyle" required>
+                        </div>
                     </div>
-                    <div class="contrasena1 linput">
-                        <label for="contrasena1">Contraseña</label>
-                        <input type="text" id="contrasena1" class="inputStyle">
+
+                    <div class="contrasena1">
+                        <div id="grupo__password">
+                            <div class="linput">
+                                <label for="password">Contraseña</label>
+                                <input type="password" id="password" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener un largo de 4 a 12 digitos*</p>
+                        </div>
                     </div>
-                    <div class="contrasena2 linput">
-                        <label for="contrasena2">Confirmar Contraseña</label>
-                        <input type="text" id="contrasena2" class="inputStyle">
+
+                    <div class="contrasena2">
+                        <div id="grupo__password2">
+                            <div class="linput">
+                                <label for="password2">Confirmar Contraseña</label>
+                                <input type="password" id="password2" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*Ambas contraseñas deben ser iguales*</p>
+                        </div>
                     </div>
+
                     <div class="termino">
-                        <input type="checkbox" id="check">
+                        <input type="checkbox" id="check" required>
                         <label for="check">Acepto la Politica de privacidad y los Terminos de servicio </label>
                     </div>
                     <div class="button">
-                        <input class="button" type="button" value="Crear Cuenta">
+                        <div>
+                            <input type="submit" onclick="Enviar()" value="Crear Cuenta" class="buttonStyle">
+                        </div>
+                        <p class="formulario__mensaje" id="formulario__mensaje"><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
                 </form>
             </div>
@@ -124,7 +179,7 @@
                 <li>Las Condes</li>
                 <li>Santiago</li>
                 <br>
-                <p style="font-size: 12px;">©Copyright 2024 Cristian/Alvaro, codigo html/css/javaScript</p>
+                <span style="font-size: 12px;">©Copyright 2024 Cristian/Alvaro, codigo html/css/javaScript</span>
             </div>            
             <div class="cajas_footer">  
                 <br> 
@@ -136,5 +191,7 @@
             </div>
         </div>   
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript\registrarse.js"></script>
 </body>
 </html>

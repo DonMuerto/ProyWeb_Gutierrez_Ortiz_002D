@@ -17,7 +17,6 @@ main{
 
 /* Formulario */
 .cont_form{
-    height: 820px;
     width: 692px;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -25,10 +24,10 @@ main{
     background-color: rgb(244,244,244);
 }
 .formu{
-    margin: 78px 40px;
+    margin: 30px 30px;
     display: grid;
     grid-template-columns: 280px 280px;
-    grid-template-rows: repeat(8, 70px) ;
+    grid-template-rows: repeat(6, 80px) 40px 80px;
     grid-template-areas: 
         "titu isesion"
         "nombre genero"
@@ -37,9 +36,9 @@ main{
         "domicilio domicilio"
         "contrasena1 contrasena2"
         "termino termino"
-        "button .";
+        "button button";
     justify-content: space-between;
-    gap: 16px;
+    gap: 20px;
 }
 .linput{
     margin-top: 16px;
@@ -52,12 +51,12 @@ main{
 .inputStyle{
     border-style: none;
     border-radius: 5px;
-    height: 30px;
+    min-height: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     margin-top: 6px;
 }
-.domicilio .inputStyle{
+#domicilio .inputStyle{
     width: 100%;
 }
 .isesion{
@@ -105,7 +104,12 @@ main{
     gap: 16px;
 }
 .button{
-    margin-top: 0;
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.buttonStyle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 144px;
     height: 60px;
@@ -117,8 +121,51 @@ main{
 }
 
 
-/* Formulario */
+/* validar */
 
+.formulario_grupo-correcto{
+    outline: 3px solid rgb(196, 252, 112);
+}
+
+.formulario_grupo-incorrecto{
+    outline: 3px solid rgb(201, 157, 157);
+}
+
+.formulario_input-error{
+    margin-top: 0;
+    color:brown; 
+    font-size:small;
+	display: none;
+}
+
+.formulario_input-error-activo{
+	display: block;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje-exito {
+	font-size: 16px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* validar */
 
 /* media*/
 
