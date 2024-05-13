@@ -78,7 +78,7 @@ const validarPassword2 = () => {
 	const inputPassword1 = document.getElementById('password');
 	const inputPassword2 = document.getElementById('password2');
 
-	if(inputPassword1.value !== inputPassword2.value && expresiones.password.test(inputPassword1)!==true ){
+	if(inputPassword1.value !== inputPassword2.value ){
         document.querySelector(`#grupo__password2 .inputStyle`).classList.add("formulario_grupo-incorrecto")
         document.querySelector(`#grupo__password2 .inputStyle`).classList.remove("formulario_grupo-correcto")
         document.querySelector(`#grupo__password2 .formulario_input-error`).classList.add('formulario_input-error-activo')
