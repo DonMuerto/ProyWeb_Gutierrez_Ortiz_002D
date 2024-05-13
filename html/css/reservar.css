@@ -33,9 +33,9 @@ main{
         "nombre genero"
         "correo telefono"
         "domicilio domicilio"
-        "button .";
+        "button button";
     justify-content: space-between;
-    gap: 16px;
+    gap: 30px;
 }
 .linput{
     margin-top: 16px;
@@ -78,20 +78,24 @@ main{
     grid-area: domicilio;
     width: 100%;
 }
-.domicilio .inputStyle{
+.domicilio .linput{
     width: 100%;
 }
 .button{
     grid-area: button;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.buttonStyle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 144px;
     height: 60px;
     font-size: 16px;
     border-radius: 14px;
     background: #2b2929;
+    text-align: center;
     color: white;
-    align-self: flex-end;
 }
 
 

@@ -6,6 +6,7 @@
     <title>Reservar</title>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/reservar.css">
+    <link rel="stylesheet" href="css/validar.css">
 </head>
 <body>
     <header>
@@ -50,41 +51,68 @@
                     <div class="titu linput">
                         <span>Tus Datos - Reservar</span>
                     </div>
-                    <div class="nombre linput">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="inputStyle">
+                    <div class="nombre">
+                        <div id="grupo__nombre">
+                            <div class="linput">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener entre 3 y 20 caracteres *</p>
+                        </div>
                     </div>
-                    <div class="genero linput">
-                        <label for="genero">Género</label>
-                        <input type="text" id="genero" class="inputStyle">
+                    <div class="genero">
+                        <div class="linput">
+                            <label for="Genero">Género</label>
+                            <select id="Genero" class="inputStyle" required>
+                            <option value="Otro">Otro</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="correo linput">
-                        <label for="correo">Correo</label>
-                        <input type="text" id="correo" class="inputStyle">
+                    <div class="correo">
+                        <div id="grupo__email">
+                            <div class="linput">
+                                <label for="email">Correo Electronico</label>
+                                <input type="text" id="email" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener el formato correcto*</p>
+                        </div>
                     </div>
-                    <div class="telefono linput">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" id="telefono" class="inputStyle">
+                    <div class="telefono">
+                        <div id="grupo__celular">
+                            <div class="linput">
+                                <label for="celular">Telefono</label>
+                                <input type="text" id="celular" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener un largo de 9 numeros</p>
+                        </div>
                     </div>
-                    <div class="domicilio linput">
-                        <label for="domicilio linput">Domicilio</label>
-                        <input type="text" id="domicilio" class="inputStyle">
+                    <div class="domicilio">
+                        <div class="linput">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" id="domicilio" class="inputStyle" required>
+                        </div>
                     </div>
                     <div class="button">
-                        <input class="button" type="button" value="Reservar">
+                        <div>
+                            <input type="submit" onclick="Enviar()" value="Reservar" class="buttonStyle">
+                        </div>
+                        <p class="formulario__mensaje" id="formulario__mensaje"><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
                 </form>
             </div>
-                <div class="cont_boxs">
-                    <div class="contactanos">
-                        <span>Tambien puedes contactarnos por:</span>
-                        <div class="iconos">
-                            <img src="img\whatsapp.png">
-                            <a href="https://www.instagram.com/fran.colorista/" target="_blank"><img src="img\insta.png"></a>
-                        </div>
+            <div class="cont_boxs">
+                <div class="contactanos">
+                    <span>Tambien puedes contactarnos por:</span>
+                    <div class="iconos">
+                        <img src="img\whatsapp.png">
+                        <a href="https://www.instagram.com/fran.colorista/" target="_blank"><img src="img\insta.png"></a>
                     </div>
-                    <div class="map"></div>
                 </div>
+                <div class="map"></div>
+            </div>
         </section>
     </main>
     <footer>
@@ -119,5 +147,7 @@
             </div>
         </div>   
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript\reservar.js"></script>
 </body>
 </html>
