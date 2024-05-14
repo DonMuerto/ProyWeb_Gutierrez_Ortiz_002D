@@ -167,12 +167,26 @@ main{
     margin-top: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 134px;
-    height: 34px;
+    height: 40px;
+    font-size: 15px;
     border-radius: 14px;
     background:#372825;
     text-align: center;
     color: white;
 }
+.buttonStyle:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 148px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: none ;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+
 .cajas:last-child{
     display: flex;
     justify-content: center;

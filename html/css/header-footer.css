@@ -24,8 +24,12 @@ body{
     background-color:#FAF5F4;
 }
 .buttonStyle{
-    background-color: #490305c9;
+    background-color: #372825;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+
 
 
 .responsive{

@@ -123,6 +123,17 @@ main{
     text-align: center;
     color: white;
 }
+.buttonStyle:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 148px;
+    height: 65px;
+    font-size: 16px;
+    border-radius: none ;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
 
 
 
