@@ -113,7 +113,7 @@ main{
     width: 354px;
     overflow: hidden;
     border-radius: 354px;
-    box-shadow: 15px 15px 2px 0 rgba(0, 0, 0, 0.356);;
+    box-shadow: 15px 15px 2px 0 #beaaa7;
     border: 1px solid rgba(0, 0, 0, 0.20);
     background: #FFF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);

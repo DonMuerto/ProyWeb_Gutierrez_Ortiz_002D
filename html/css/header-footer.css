@@ -115,6 +115,10 @@ footer{
     width: fit-content;
     margin: 0px 12px;
 }
+.responsive:last-child{
+    gap: 96px;
+}
+
 /* footer */
 
 .nav-list li{
