@@ -23,6 +23,7 @@ main{
     overflow: hidden;
 }
 
+
 /* carrusel */
 .carrusel_b{
     grid-area: carrusel_b;
@@ -32,50 +33,88 @@ main{
     align-items: center;
     margin-left: 12px;
     border-radius: 10px;
+    width: 400px;
 }
-.slider-wrapper{
-    overflow: hidden;
+#slider input[type=radio]{
+    display: none;
+}
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+#fotos{
+    position: relative;
+    z-index: 1;
+    padding: 10px;
     border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
 }
-.slider{
-    height: 680px;
-    width: 388px;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-.slider img{
-    height: 100%;
+#overflow {
     width: 100%;
-    flex: 1 0 100%;
+    height: 100%;
+    overflow: hidden;
 }
-.botone{
+#slide1:checked ~ #fotos .inner {
+    margin-left: 0;
+}
+#slide2:checked ~ #fotos .inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ #fotos .inner {
+    margin-left: -200%;
+}
+#fotos .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+}
+
+#fotos .slide {
+    width: 25%;
+    float:left;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 16px;
-    grid-area: botone;
-    width: 134px;
-    height: 34px;
-    border-radius: 16px;
-    background:#372825;
-    color: white;
-    margin-top: 16px;
+    color: #fff;
 }
-.botone a{
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+.slide{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 584px;
+    width: 376px;
+}
+.slide img{
+    height: 584px;
+    width: 376px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.botone a:hover{
-    opacity: 1;
+#fotos .slide_1 {
+    background: transparent;
 }
-
-/* carrusel */
-
+#fotos .slide_2 {
+    background: transparent;
+}
+#fotos .slide_3 {
+    background: transparent;
+}
+#fotos .slide_4 {
+    background: transparent;
+}
+#bullets {
+    margin: 16px 0 0;
+    text-align: center;
+ }
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #372825;
+    margin: 0 10px;
+}
 
 .titulo{
     grid-area: titulo;
@@ -87,8 +126,6 @@ main{
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     background-color: #E1D2CF;
 }
-
-
 .reserva{
     grid-area: reserva;
     height: 288px;
@@ -134,6 +171,7 @@ main{
 }
 .carrusel_s img{
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -162,6 +200,7 @@ main{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
+
 
 
 
@@ -272,18 +311,14 @@ main{
         max-width: fit-content;
 	}
 
+    #fotos{
+        background: transparent;
+        border: none;
+    }
+
     .carrusel_b{
-        height: auto;
-        width: auto;
         margin-left: 0px;
         margin-right: 12px;
-    }
-    .carrusel_b img{
-        height: auto;
-        width: auto;
-    }
-    .botone{
-        display: none;
     }
 
     .titulo h1{
