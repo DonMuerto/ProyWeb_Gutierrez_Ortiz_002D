@@ -7,8 +7,8 @@ main{
 
 .bento{
     width: 80%;
-    max-width: 1172px;
-    max-height: 638px;
+    max-width: 1200px;
+    max-height: 700px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 108px repeat(4,  1fr);
@@ -22,6 +22,7 @@ main{
     gap: 16px;
     overflow: hidden;
 }
+
 
 
 /* carrusel */
@@ -108,13 +109,28 @@ main{
     text-align: center;
  }
 #bullets label {
+    border:1px solid rgb(100, 99, 99);
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 16px;
+    height: 16px;
     border-radius:100%;
     background: #372825;
     margin: 0 10px;
+    transition: all 0.2s ease;
 }
+#bullets label:hover {
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel1{
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel2{
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel3{
+    background: rgba(245, 245, 245, 0.788);
+}
+
 
 .titulo{
     grid-area: titulo;
@@ -189,16 +205,27 @@ main{
 }
 
 .parrafo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: parrafo2;
     border-radius: 10px;
     font-size: 16px;
     padding: 16px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
     background-color: #E1D2CF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.parrafo2 .menu-a{
+    text-decoration: none;
+    color: black;
+
+}
+.parrafo2 .menu-a:hover{
+    color: #DD7D6C;
+    text-decoration: none;
 }
 
 
