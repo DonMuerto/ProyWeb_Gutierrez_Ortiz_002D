@@ -2,6 +2,9 @@ main{
     display: flex;
     flex-direction: column;
 }
+p{
+    padding: 16px;
+}
 
 .section:first-child{
     margin-top: 30px;
@@ -16,16 +19,16 @@ main{
 .fstock{
     height: fit-content;
     width: 440px;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 
 .about{
+    margin: 46px 0;
     height: 242px;
-    width: 50%;
-    width: 440px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +56,7 @@ main{
 }
 
 .francisca{
-    width: 600px;
+    width: 650px;
     display: flex;
     flex-direction: column;
 }
@@ -64,9 +67,13 @@ main{
     font-size: 16px;
 }
 .cajitas div:first-child{
+    flex: 1;
+    padding: 8px;
+}
+.cajitas div:last-child{
     flex: 2;
     font-size: 16px; 
-    padding: 10px;
+    padding: 8px;
 }
 
 .fotos{
