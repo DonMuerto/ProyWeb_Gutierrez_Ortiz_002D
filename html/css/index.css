@@ -1,0 +1,397 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.bento{
+    width: 80%;
+    max-width: 1200px;
+    max-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 108px repeat(4,  1fr);
+    grid-template-areas: 
+        "carrusel_b titulo titulo"
+        "carrusel_b reserva reserva"
+        "carrusel_b reserva reserva"
+        "carrusel_b parrafo1 parrafo2"
+        "carrusel_b parrafo1 parrafo2"
+    ;
+    gap: 16px;
+    overflow: hidden;
+}
+
+
+
+/* carrusel */
+.carrusel_b{
+    grid-area: carrusel_b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    border-radius: 10px;
+    width: 400px;
+}
+#slider input[type=radio]{
+    display: none;
+}
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+#fotos{
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
+}
+#overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #fotos .inner {
+    margin-left: 0;
+}
+#slide2:checked ~ #fotos .inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ #fotos .inner {
+    margin-left: -200%;
+}
+#fotos .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+}
+
+#fotos .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.slide{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 584px;
+    width: 376px;
+}
+.slide img{
+    height: 584px;
+    width: 376px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#fotos .slide_1 {
+    background: transparent;
+}
+#fotos .slide_2 {
+    background: transparent;
+}
+#fotos .slide_3 {
+    background: transparent;
+}
+#fotos .slide_4 {
+    background: transparent;
+}
+#bullets {
+    margin: 16px 0 0;
+    text-align: center;
+ }
+#bullets label {
+    border:1px solid rgb(100, 99, 99);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius:100%;
+    background: #372825;
+    margin: 0 10px;
+    transition: all 0.2s ease;
+}
+#bullets label:hover {
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel1{
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel2{
+    background: rgba(245, 245, 245, 0.788);
+}
+#slide1:checked ~ #bullets .libel3{
+    background: rgba(245, 245, 245, 0.788);
+}
+
+
+.titulo{
+    grid-area: titulo;
+    height: 100%;
+    margin-right: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
+}
+.reserva{
+    grid-area: reserva;
+    height: 288px;
+    margin-right: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E1D2CF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+}
+.cajas{
+    width: 100%;
+}
+.cajas:first-child{
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cajas button{
+    margin-top: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 134px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 14px;
+    background:#372825;
+    text-align: center;
+    color: white;
+}
+.buttonStyle:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 148px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: none ;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+
+.cajas:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.carrusel_s{
+    width: 264px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+}
+.carrusel_s img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.parrafo{
+    grid-area: parrafo1;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #E1D2CF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.parrafo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: parrafo2;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 16px;
+    overflow: hidden;
+    background-color: #E1D2CF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.parrafo2 .menu-a{
+    text-decoration: none;
+    color: black;
+
+}
+.parrafo2 .menu-a:hover{
+    color: #DD7D6C;
+    text-decoration: none;
+}
+
+
+
+
+@media (width < 1200px){
+    .bento{
+		grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 108px repeat(5,  1fr);
+		grid-template-areas: 
+        "titulo titulo"
+        "carrusel_b reserva"
+        "carrusel_b reserva"
+        "carrusel_b reserva"
+        "parrafo1 parrafo1"
+        "parrafo2 parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    .carrusel_b img{
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+    }
+
+    .reserva{
+        width: fit-content;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .cajas{
+        width: 80%;
+        margin: 16px;
+    }
+    .carrusel_s{
+        margin-bottom: 30px;
+    }
+}
+
+@media (width < 920px){
+    .bento{
+		grid-template-columns: 1fr 1fr;
+        grid-template-rows: 108px repeat(3,  1fr);
+		grid-template-areas: 
+        "titulo titulo"
+        "reserva reserva"
+        "carrusel_b parrafo1"
+        "carrusel_b parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    .carrusel_b{
+        height: auto;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 12px;
+        
+    }
+    .carrusel_b img{
+        min-width: 300px;
+        max-height: 600px;
+    }
+
+    .titulo h1{
+        font-size: 40px;
+    }
+
+    .reserva{
+        width: auto;
+        height: 100%;
+    }
+    .cajas{
+        width: 250px;
+    }
+    .carrusel_s img{
+        border-radius: 10px;
+    }
+
+    .parrafo{
+        height: auto;
+        margin-right: 12px;
+    }
+    .parrafo2{
+        height: auto;
+        margin-right: 12px;
+    }
+}
+
+@media (width < 810px){
+    .bento{
+		grid-template-columns: 1fr ;
+        grid-template-rows: 108px repeat(6,  1fr);
+		grid-template-areas: 
+        "titulo "
+        "reserva"
+        "reserva"
+        "carrusel_b"
+        "carrusel_b"
+        "parrafo1"
+        "parrafo2";
+        max-height: fit-content;
+        max-width: fit-content;
+	}
+
+    #fotos{
+        background: transparent;
+        border: none;
+    }
+
+    .carrusel_b{
+        margin-left: 0px;
+        margin-right: 12px;
+    }
+
+    .titulo h1{
+        font-size: 40px;
+    }
+
+    .reserva{
+        justify-self: center;
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cajas{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrusel_s img{
+        border-radius: 10px;
+    }
+
+    .parrafo{
+        height: auto;
+        margin-right: 12px;
+    }
+    .parrafo2{
+        height: auto;
+        margin-right: 12px;
+    }
+}

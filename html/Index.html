@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menu-footer.css">
-    <link rel="stylesheet" href="css/StyleIndex.css">
-    <title>FranColorista</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Fran Colorista</title>
 </head>
-<body>
-    <section class="Menu">
-        <div class="caja">
-            <div class="Logo">
-                <img src="img\fran.png" alt="LOGO">
+<body style="margin: 0 auto;">
+    <header>
+        <div style="height: 90px;"></div>
+        <div class="blure"></div>
+        <div class="responsive">
+            <div class="logo">
+                <img style="height: 90px; width: 100px; margin-left: 12px;" src="img\fran.png" alt="LOGO">
             </div>
-            <div class="Letras">
-                <div >
-                    <a class="menu-a" href="Index.html">•Inicio•</a>
-                </div>
-                <div >
-                    <a class="menu-a" href="Acerca.html">•Acerca•</a>
-                </div>
-                <div >
-                    <a class="menu-a" href="Galeria.html">•Galeria•</a>
-                </div>
+            <div class="nav_center">
+                <a href="Index.html">Inicio</a>
+                <a href="Acerca.html">Acerca</a>
+                <a href="Galeria.html">Galeria</a>
+                <a href="Reservar.html">Reservar</a>
+            </div>
+            <div class="nav_right">
+                <a href="Registrarse.html">Registrarse</a>
+                <a style="margin-right: 12px;" href="Iniciar_sesion.html">Iniciar sesión</a>
+                <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <div class="container-fotos">
-            <div class="slide-circulo prev" onclick="prevSlide()">&lt;</div>
-            <div class="slider">
-                <img id="slide-1" src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" class="active">
-                <img id="slide-2" src="img\9fe3f4b9-3212-44e6-87b3-83b03a9dc8d3.jpg" style="height: 300px;">
-                <img id="slide-3" src="img\11e94fa6-a6c8-4fa0-bd69-4755ef558ae7.jpg" > 
+        <div class="burguer" id="burguer">
+            <button id="cerrar" class="btnMenu-cerrar"><img src="img\close.png" alt=""></button>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Acerca.html">Acerca</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Reservar.html">Reservar</a></li>
+                    <li><a href="Registrarse.html">Registrarse</a></li>
+                    <li><a href="Iniciar_sesion.html">Iniciar sesion</a></li>
+                </ul>
             </div>
-            <div class="slide-circulo next" onclick="nextSlide()">&gt;</div>
         </div>
-    </section>
-    <br>
-    <div class="botone">
-        <div class="slider-nav">
-            <a href="#" onclick="currentSlide(1)"></a>
-            <a href="#" onclick="currentSlide(2)"></a>
-            <a href="#" onclick="currentSlide(3)"></a>
-        </div>
-    </div>
-    <br>
-    <section class="container-caja">
-        <div class="container-p">
-            <div class="caja-p">
-                <p style="font-size: 20px; padding-left: 20px;">
-                    ¡Descubre el secreto detrás de tu cabello radiante en la comodidad de 
-                    tu propio hogar con nuestros servicios de peluquería a domicilio! 
-                    Como peluquería independiente apasionada por realzar tu belleza, 
-                    nos especializamos en una amplia gama de tratamientos para el cabello 
-                    que van desde correcciones precisas hasta relajantes masajes capilares. 
-                    Con una atención personalizada y especializados en el público femenino, 
-                    estamos comprometidos a brindarte resultados excepcionales que reflejen 
-                    tu estilo único, como también que resalte tu belleza natural
+    </header>
+    <main>
+        <section class="bento">
+            <div class="carrusel_b">
+                <div id="slider">
+                    <input type="radio" name="slider" value="slider1" id="slide1" checked>
+                    <input type="radio" name="slider" value="slider2" id="slide2">
+                    <input type="radio" name="slider" value="slider3" id="slide3">
+                    <div id="fotos">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                    <img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg">
+                                </div>
+                                <div class="slide slide_2">
+                                    <img src="img\dd1371d5-4781-47fa-81de-57e8c2950369.jpg">
+                                </div>
+                                <div class="slide slide_3">
+                                    <img src="img\9fe3f4b9-3212-44e6-87b3-83b03a9dc8d3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    <div id="bullets">
+                        <label class="libel1" for="slide1"></label>
+                        <label class="libel2" for="slide2"></label>
+                        <label class="libel3" for="slide3"></label>
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo">
+                <h1>Francisca Colorista</h1>
+            </div>
+            <div class="reserva">
+                <div class="cajas">
+                    <h2>Todo en uno</h2>
+                    <p style="height: 60px; max-width: 300px; padding:6px ">Un único formulario para reservar todos los servicios. Podrás solicitar corte, color, tratamiento.</p>
+                    <a href="Reservar.html"><button class="buttonStyle">Reserva ahora</button></a>
+                </div>
+                <div class="cajas">
+                    <div class="carrusel_s">
+                        <img src="img\9132de40-fdef-47ab-ae90-64f9ac5fb9c0.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="parrafo">
+                <p>
+                    Descubre el secreto de un cabello radiante en casa con nuestra peluquería a domicilio. Especializados en tratamientos capilares, ofrecemos desde correcciones precisas hasta masajes relajantes. Con atención personalizada y enfoque en mujeres, garantizamos resultados excepcionales que realzan tu estilo y belleza natural.
                 </p>
             </div>
-            <div class="caja-p">
-                <p style="font-size: 20px; padding-right: 20px;">
-                    Ya sea que desees refrescar tu look con un corte moderno, 
-                    iluminar tu melena con babylights y balayage, o simplemente mimar 
-                    tu cabello con un baño de color revitalizante o más, estamos aquí
-                    para hacerlo realidad, puedes ver esta variedad de opciones en nuestras
-                    <a class="menu-a" href="Galeria.html">GALERIA.</a><br>
-                    Nuestro objetivo es crear una experiencia de peluquería que no solo te
-                    haga lucir increíble, sino que también te haga sentir mimada y especial
-                    en la comodidad de tu hogar. ¡Permíteme ser tu aliada en tu viaje hacia
-                    un cabello hermoso y lleno de vida!
+            <div class="parrafo2">
+                <p>
+                    Refresca tu estilo con cortes modernos, ilumina tu melena con babylights y balayage, o revitaliza tu cabello con un baño de color. Descubre estas opciones en nuestra <a class="menu-a" href="Galeria.html">GALERIA</a>. Nuestra meta es no solo hacer que luzcas increíble, sino también que te sientas mimada y especial en casa. Únete a nuestro viaje hacia un cabello hermoso y lleno de vida.
                 </p>
             </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <section class="container-footer">
-        <div class="container-footer-cajas">
-            <div class="cajas-footer">
+        </section>
+    </main>
+    <footer>
+        <div class="responsive">
+            <div style="margin-left: 46px;" class="cajas_footer">
+                <br>
+                <br>
                 <h4>Programadores web: </h4>
+                <br>
                 <li>Cristian Gutierrez</li>
                 <li>Alvaro Ortiz</li>
             </div>
-            <div class="cajas-footer">
+            <div class="cajas_footer">
+                <br>
+                <br>
                 <h4>Donde Nos encuentran:</h4>
+                <br>
                 <li>Peñaflor</li>
                 <li>Maipu</li>
                 <li>Las Condes</li>
                 <li>Santiago</li>
+                <br>
+                <p style="font-size: 12px;">©Copyright 2024 Cristian/Alvaro, codigo html/css/javaScript</p>
             </div>            
-            <div class="cajas-footer" style="display: flex; justify-content: center; flex-direction: column;">                
+            <div class="cajas_footer">  
+                <br> 
+                <br>
+                <h4>Contactanos por:</h4>             
+                <br>
                 <li>WhatsApp: +56 9 3101 6015</li>
-                <li><a class="Footer-a" href="https://www.instagram.com/fran.colorista/">Instragram <img src="img/instagram.png" style="height: 12px;"></a></li>
-                
-            </div>            
-        </div>
-    </section>
-    <div class="container-footer">
-        <div class="cajas-footer">
-            <p style="font-size: 10px;">©Copyright 2024 Cristian/Alvaro, codigo html/css/javaScript</p>
-        </div>
-    </div>
-    <script>
-        let currentSlideIndex = 1;
-        function showSlide(n) {
-            const slides = document.querySelectorAll('.slider img');
-            if (n > slides.length) {
-                currentSlideIndex = 1;
-            }
-            if (n < 1) {
-                currentSlideIndex = slides.length;
-            }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].classList.remove('active');
-            }
-            slides[currentSlideIndex - 1].classList.add('active');
-            const navDots = document.querySelectorAll('.slider-nav a');
-            navDots.forEach(dot => dot.classList.remove('active'));
-            navDots[currentSlideIndex - 1].classList.add('active');
-        }
-        function prevSlide() {
-            showSlide(currentSlideIndex -= 1);
-        }
-        function nextSlide() {
-            showSlide(currentSlideIndex += 1);
-        }
-        function currentSlide(n) {
-            showSlide(currentSlideIndex = n);
-        }
-        showSlide(currentSlideIndex);
-    </script>
+                <li><a href="https://www.instagram.com/fran.colorista/" target="_blank">Instragram <img src="img/instagram.png" style="height: 12px;"></a></li>
+                <br>
+            </div>
+        </div>   
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript\hamburguer.js"></script>
 </body>
 </html>

@@ -1,0 +1,182 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* validar */
+
+
+/* Formulario */
+.cont_form{
+    width: 692px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
+}
+.formu{
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: repeat(6, 80px) 40px 80px;
+    grid-template-areas: 
+        "titu isesion"
+        "nombre genero"
+        "papellido mapellido"
+        "correo telefono"
+        "domicilio domicilio"
+        "contrasena1 contrasena2"
+        "termino termino"
+        "button button";
+    justify-content: space-between;
+    gap: 20px;
+}
+.linput{
+    margin-top: 16px;
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.inputStyle{
+    border-style: none;
+    border-radius: 5px;
+    min-height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 6px;
+}
+.domicilio .linput{
+    width: 100%;
+}
+.isesion{
+    grid-area: isesion;
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+.titu{
+    margin-top: 0;
+    grid-area: titu;
+    font-size: 48px;
+}
+.nombre{
+    grid-area: nombre;
+}
+.genero{
+    grid-area: genero;
+}
+.papellido{
+    grid-area: papellido;
+}
+.mapellido{
+    grid-area: mapellido;
+}
+.correo{
+    grid-area: correo;
+}
+.telefono{
+    grid-area: telefono;
+}
+.domicilio{
+    grid-area: domicilio;
+    width: 100%;
+}
+.contrasena1{
+    grid-area: contrasena1;
+}
+.contrasena2{
+    grid-area: contrasena2;
+}
+.termino{
+    grid-area: termino;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+.button{
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.buttonStyle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 144px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 14px;
+    background: #372825;
+    text-align: center;
+    color: white;
+}
+.buttonStyle:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 148px;
+    height: 65px;
+    font-size: 16px;
+    border-radius: none ;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+
+
+
+/* media*/
+
+@media (width<620px){
+    .formu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 80px) 1fr;
+        grid-template-areas: 
+            "isesion"
+            "titu"
+            "nombre"
+            "genero"
+            "papellido"
+            "mapellido"
+            "correo"
+            "telefono"            
+            "domicilio"
+            "contrasena1"
+            "contrasena2"
+            "termino"
+            "button";
+        gap: 16px;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont_form{
+        height: 100%;
+        width: fit-content;
+    }
+    .domicilio{
+        justify-self: center;
+        width: 280px
+    }
+    .domicilio .inputStyle{
+        width: 280px;
+    }
+    .isesion, .titu, .nombre, .genero, .papellido, .mapellido, .correo, .telefono, .contrasena1, .contrasena2, .termino, .button{
+        justify-self: center;
+    }
+}

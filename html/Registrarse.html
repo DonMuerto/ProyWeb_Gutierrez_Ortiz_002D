@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/validar.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/registrarse.css">
+</head>
+<body>
+    <header>
+        <div style="height: 90px;"></div>
+        <div class="blure"></div>
+        <div class="responsive">
+            <div class="logo">
+                <img style="height: 90px; width: 100px; margin-left: 12px;" src="img\fran.png" alt="LOGO">
+            </div>
+            <div class="nav_center">
+                <a href="Index.html">Inicio</a>
+                <a href="Acerca.html">Acerca</a>
+                <a href="Galeria.html">Galeria</a>
+                <a href="Reservar.html">Reservar</a>
+            </div>
+            <div class="nav_right">
+                <a href="Registrarse.html">Registrarse</a>
+                <a style="margin-right: 12px;" href="Iniciar_sesion.html">Iniciar sesión</a>
+                <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
+            </div>
+        </div>
+        <div class="burguer" id="burguer">
+            <button id="cerrar" class="btnMenu-cerrar"><img src="img\close.png" alt=""></button>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Acerca.html">Acerca</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Reservar.html">Reservar</a></li>
+                    <li><a href="Registrarse.html">Registrarse</a></li>
+                    <li><a href="Iniciar_sesion.html">Iniciar sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="cont_form">
+                <form method="post" id="formulario" class="formu">
+                    <div class="isesion">
+                        <span style="width:fit-content;">¿Ya tienes una cuenta?</span>
+                        <a href="Iniciar_sesion.html" style="text-decoration:none; color:rgb(92,90,90)"><strong>Iniciar sesión</strong></a>
+                        <a href="Iniciar_sesion.html"><img style="height: 12px; width: 16px;" src="img/Arrow 1.png"></a>
+                    </div>
+                    <div class="titu linput">
+                        <span>Crear Cuenta</span>
+                    </div>
+                    <div class="nombre">
+                        <div id="grupo__nombre">
+                            <div class="linput">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*4 a 20 caracteres, solo letras y sin espacios*</p>
+                        </div>
+                    </div>
+
+                    <div class="genero">
+                        <div class="linput">
+                            <label for="Genero">Género</label>
+                            <select id="Genero" class="inputStyle" required>
+                            <option value="Otro">Otro</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="papellido">
+                        <div id="grupo__paterno">
+                            <div class="linput">
+                                <label for="paterno">Apellido Paterno</label>
+                                <input type="text" id="paterno" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*4 a 20 caracteres, solo letras y sin espacios*</p>
+                        </div>
+                    </div>
+
+                    <div class="mapellido" >
+                        <div id="grupo__materno">
+                            <div class="linput">
+                                <label for="materno">Apellido Materno</label>
+                                <input type="text" id="materno" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*4 a 20 caracteres, solo letras y sin espacios*</p>
+                        </div>
+                    </div>
+                    
+                    <div class="correo">
+                        <div id="grupo__email">
+                            <div class="linput">
+                                <label for="email">Correo Electronico</label>
+                                <input type="text" id="email" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*El campo debe tener el formato correcto*</p>
+                        </div>
+                    </div>
+                    <div class="telefono">
+                        <div id="grupo__celular">
+                            <div class="linput">
+                                <label for="celular">Telefono</label>
+                                <input type="text" id="celular" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*Debe tener un largo de 9 numeros y sin espacios*</p>
+                        </div>
+                    </div>
+
+                    <div class="domicilio">
+                        <div class="linput">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" id="domicilio" class="inputStyle" required>
+                        </div>
+                    </div>
+
+                    <div class="contrasena1">
+                        <div id="grupo__password">
+                            <div class="linput">
+                                <label for="password">Contraseña</label>
+                                <input type="password" id="password" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*Debe tener un largo de 4 a 12 caracteres*</p>
+                        </div>
+                    </div>
+
+                    <div class="contrasena2">
+                        <div id="grupo__password2">
+                            <div class="linput">
+                                <label for="password2">Confirmar Contraseña</label>
+                                <input type="password" id="password2" class="inputStyle">
+                            </div>
+                            <p class="formulario_input-error">*Ambas contraseñas deben ser iguales*</p>
+                        </div>
+                    </div>
+
+                    <div class="termino">
+                        <input type="checkbox" id="check" required>
+                        <label for="check">Acepto la Politica de privacidad y los Terminos de servicio </label>
+                    </div>
+                    <div class="button">
+                        <div>
+                            <input type="submit" onclick="Enviar()" value="Crear Cuenta" class="buttonStyle">
+                        </div>
+                        <p class="formulario__mensaje" id="formulario__mensaje"><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="responsive">
+            <div style="margin-left: 12px;" class="cajas_footer">
+                <br>
+                <br>
+                <h4>Programadores web: </h4>
+                <br>
+                <li>Cristian Gutierrez</li>
+                <li>Alvaro Ortiz</li>
+            </div>
+            <div class="cajas_footer">
+                <br>
+                <br>
+                <h4>Donde Nos encuentran:</h4>
+                <br>
+                <li>Peñaflor</li>
+                <li>Maipu</li>
+                <li>Las Condes</li>
+                <li>Santiago</li>
+                <br>
+                <span style="font-size: 12px;">©Copyright 2024 Cristian/Alvaro, codigo html/css/javaScript</span>
+            </div>            
+            <div class="cajas_footer">  
+                <br> 
+                <br> 
+                <h4>Contactanos por:</h4>               
+                <br>
+                <li>WhatsApp: +56 9 3101 6015</li>
+                <li><a class="Footer-a" href="https://www.instagram.com/fran.colorista/">Instragram <img src="img/instagram.png" style="height: 12px;"></a></li>
+                <br>
+            </div>
+        </div>   
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JavaScript\registrarse.js"></script>
+    <script src="JavaScript\hamburguer.js"></script>
+</body>
+</html>

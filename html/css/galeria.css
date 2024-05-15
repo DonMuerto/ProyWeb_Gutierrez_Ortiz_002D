@@ -1,0 +1,253 @@
+main{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bento{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 16px ;
+	grid-template-areas: 
+		"balayage correcion babylights"
+		"bcolor corte tcapilar"
+	;
+}
+
+.contenedor_foto{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.411);
+    border-right: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+.balayage{
+	grid-area: balayage;
+	border-radius: 10px;
+	z-index: 2;
+}
+.balayage+section{
+	grid-area: balayage;
+}
+
+.correccion{
+	grid-area: correcion;
+	border-radius: 10px;
+	z-index: 2;
+}
+.correccion+section{
+	grid-area: correcion;
+}
+
+.babylights{
+	grid-area: babylights;
+	border-radius: 10px;
+	z-index: 2;
+}
+.babylights+section{
+	grid-area: babylights;
+}
+
+.bcolor{
+	grid-area: bcolor;
+	border-radius: 10px;
+	z-index: 2;
+}
+.bcolor+section{
+    grid-area: bcolor;
+}
+
+.corte{
+	grid-area: corte;
+	border-radius: 10px;
+	z-index: 2;
+}
+.corte+section{
+    grid-area: corte;
+}
+
+.tcapilar{
+	grid-area: tcapilar;
+	border-radius: 10px;
+	z-index: 2;
+}
+.tcapilar+section	{
+    grid-area: tcapilar;
+}
+
+.linqfoto{
+	border-radius: 10px;
+	display: inline-block; 
+	width:100%; 
+	height: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items:end;
+	transition: outline 0.2s ease;
+}
+.linqfoto span{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 34px;
+    background: #DACBC8;
+    color: rgb(17, 16, 16);
+	padding: 6px;
+	display: flex;
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	transition: all 0.1s ease;
+}
+.linqfoto:hover span{
+	border-radius: 0;
+	color: #1b0501;
+	border-top: 5px #DACBC8 solid;
+	font-size: 18px;
+}
+
+.linqfoto:hover{
+	outline: 5px #DC9A8E solid;
+}
+
+/* modal */
+.modales{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.modalDialog {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	inset: 0;
+	background: #faf5f4cc;
+	color: black;
+	z-index: 20;
+    opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modales h2{
+	font-size: 36px;
+	font-weight: 600;
+}
+.modales h3{
+	margin-top: 0;
+	font-size: 20px;
+	border: 2px solid; 
+	border-radius: 5px; 
+	padding: 3px
+}
+.modales p{
+	font-size: 16px;
+	margin: 20px 50px;
+}
+
+.modalDialog > div {
+	border: 1px solid black;
+	width: 350px;
+	height: fit-content;
+	position: relative;
+	margin: 30% auto;
+	border-radius: 10px;
+	background: radial-gradient(circle , rgba(255, 255, 255, 0), rgba(201, 197, 197, 0.418));
+	backdrop-filter: blur(80px);
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+.close-cancelar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #606061;
+	color: #FFFFFF;
+	margin-top: 10px;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	width: 100px;
+	padding: 2px;
+	margin-bottom: 4px;
+	text-decoration: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	transition: all 0.2s ease;
+}
+.close-reservar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #372825;
+	color: #FFFFFF;
+	margin-top: 10px;
+	margin-bottom: 36px;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	width: 100px;
+	padding: 2px;
+	text-decoration: none;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	transition: all 0.1s ease;
+}
+
+
+.close-cancelar:hover { 
+	outline: 3px solid #79554f;
+	background: #79554f; 
+	font-size: 18px;
+
+}
+.close-reservar:hover { 
+	outline: 3px solid #DC9A8E;
+	background: #DC9A8E;
+	font-size: 18px;
+}
+/* modal */
+
+@media (width < 800px){
+    .bento{
+		grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"balayage correcion "
+		"babylights bcolor "
+		"corte tcapilar"
+	;
+	}
+}
+
+@media (width < 550px){
+    .bento{
+		grid-template-columns: 1fr;
+    	grid-template-rows: repeat(6, 1fr);
+		grid-template-areas: 
+		"balayage"
+		"correcion" 
+		"babylights"
+		"bcolor" 
+		"corte"
+		"tcapilar"
+	;
+	}
+}
