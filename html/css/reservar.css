@@ -148,6 +148,11 @@ main{
     width: 100%;
     height: 380px;
 }
+.map iframe{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
 
 @media (width<1150px){
     .cont_boxs{
