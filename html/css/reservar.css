@@ -76,6 +76,7 @@ main{
     grid-area: telefono;
 }
 .domicilio{
+    margin-top: 8px;
     grid-area: domicilio;
     width: 100%;
 }
@@ -139,7 +140,6 @@ main{
     gap: 30px;
 }
 
-
 .map{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
@@ -188,7 +188,7 @@ main{
         margin: 78px 40px;
         display: grid;
         grid-template-columns: 280px;
-        grid-template-rows: repeat(6, 70px) 100px ;
+        grid-template-rows: repeat(6, 70px) 1fr ;
         grid-template-areas: 
             "titu"
             "nombre"
@@ -197,9 +197,15 @@ main{
             "telefono"
             "domicilio"
             "button ";
-        justify-content: space-between;
         gap: 16px;
     }
+    .button{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
     .cont_boxs{
         width: 360px;
         height: auto;

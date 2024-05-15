@@ -27,7 +27,7 @@ main{
     margin: 78px 40px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 106px repeat(4, 76px) ;
+    grid-template-rows: 106px 85px  85px repeat(2, 76px) ;
     grid-template-areas: 
         "titu"
         "correo"
@@ -66,7 +66,7 @@ main{
     grid-area: contrasena1;
 }
 .olre{
-    margin-top: 16px;
+    margin-top: 20px;
     grid-area: olre;
     display: flex;
     flex-direction: column;
@@ -109,19 +109,23 @@ main{
 }
 
 .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 354px;
     width: 354px;
-    overflow: hidden;
     border-radius: 354px;
-    box-shadow: 15px 15px 2px 0 #beaaa7;
-    border: 1px solid rgba(0, 0, 0, 0.20);
     background: #FFF;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    border: 2px solid #EE9BC5;
     background-color: rgb(244,244,244);
+}
+.circle img{
+    height: 478px;
+    width: 602px;
 }
 
 @media (width<1250px){
+
     .circle{
         display: none;
     }

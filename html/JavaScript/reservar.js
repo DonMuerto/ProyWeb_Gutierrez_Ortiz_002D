@@ -58,11 +58,15 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if(celdas.nombre && celdas.email && celdas.celular ){
+        
+        //aqui el enviar el correo
+
         formulario.reset();
 
         document.querySelectorAll('.formulario_grupo-correcto').forEach((p) => {
             p.classList.remove('formulario_grupo-correcto')
         });
+
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');

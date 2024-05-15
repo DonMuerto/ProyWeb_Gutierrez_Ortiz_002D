@@ -194,7 +194,7 @@ footer{
         position: fixed;
         z-index: 4;
         border-left: 1px solid rgba(0, 0, 0, 0.178);
-        background-color: #faf5f4ef;
+        background-color: #faf5f4f8;
         display: flex;
         flex-direction: column;
         justify-content: start;

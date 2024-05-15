@@ -144,7 +144,7 @@ main{
     .formu{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(13, 70px) ;
+        grid-template-rows: repeat(12, 80px) 1fr;
         grid-template-areas: 
             "isesion"
             "titu"
@@ -161,15 +161,20 @@ main{
             "button";
         gap: 16px;
     }
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
     .cont_form{
         height: 100%;
         width: fit-content;
     }
     .domicilio{
         justify-self: center;
+        width: 280px
     }
     .domicilio .inputStyle{
-        width: 262px;
+        width: 280px;
     }
     .isesion, .titu, .nombre, .genero, .papellido, .mapellido, .correo, .telefono, .contrasena1, .contrasena2, .termino, .button{
         justify-self: center;
