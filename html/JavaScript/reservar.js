@@ -57,9 +57,21 @@ const validarCampo = (expresion, validar, campo) => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    
+
     if(celdas.nombre && celdas.email && celdas.celular ){
         
-        //aqui el enviar el correo
+            emailjs.send("service_nt2wwvc","template_t4zqlsn",{
+                name: String(document.getElementById('nombre').value),
+                gender: String(document.getElementById('Genero').value),
+                email: String(document.getElementById('email').value),
+                cellphone: String(document.getElementById('celular').value),
+                domicilio: String(document.getElementById('domicilio').value)
+            }).then((res)=>{
+                console.log(res);
+                alert("Se envio el mensaje");
+            })
+            .catch((err)=>console.log(err));
 
         formulario.reset();
 
@@ -79,3 +91,4 @@ formulario.addEventListener('submit', (e) => {
 	}
 
 });
+

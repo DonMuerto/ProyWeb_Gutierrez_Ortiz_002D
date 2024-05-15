@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/reservar.css">
     <link rel="stylesheet" href="css/validar.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "NPFAHARCLU6ZJj4gY",
+      });
+   })();
+</script>
 </head>
 <body>
     <header>
@@ -94,7 +104,7 @@
                     </div>
                     <div class="button">
                         <div>
-                            <input type="submit" onclick="Enviar()" value="Reservar" class="buttonStyle">
+                            <input type="submit" value="Reservar" class="buttonStyle">
                         </div>
                         <p class="formulario__mensaje" id="formulario__mensaje"><b>Error:</b> Por favor rellena el formulario correctamente. </p>
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
