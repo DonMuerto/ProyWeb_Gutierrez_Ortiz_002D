@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll('#formulario input'); // const se vuelv
 const expresiones = {
     nombre: /^[a-zA-ZÀ-ÿ]{3,20}$/,  // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    celular: /^\d{9,12}$/ // /^(6|9)(\s)?\d{4}(\s)?\d{4}$/
+    celular: /^\d{9}$/ // /^(6|9)(\s)?\d{4}(\s)?\d{4}$/
 }
 
 var genero = "Otro";
