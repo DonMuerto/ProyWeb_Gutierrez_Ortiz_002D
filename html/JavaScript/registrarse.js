@@ -95,6 +95,21 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if(celdas.paterno && celdas.materno && celdas.nombre && celdas.email && celdas.celular && celdas.password){
+        
+        emailjs.send("service_nt2wwvc","template_5z2krbj",{
+            name: String(document.getElementById('nombre').value),
+            gender: String(document.getElementById('Genero').value),
+            papellido: String(document.getElementById('paterno').value),
+            mapellido: String(document.getElementById('materno').value),
+            email: String(document.getElementById('email').value),
+            cellphone: String(document.getElementById('celular').value),
+            domicilio: String(document.getElementById('domicilio').value)
+        }).then((res)=>{
+            console.log(res);
+            alert("Se envio el mensaje");
+        })
+        .catch((err)=>console.log(err));
+
         formulario.reset();
 
         document.querySelectorAll('.formulario_grupo-correcto').forEach((p) => {
