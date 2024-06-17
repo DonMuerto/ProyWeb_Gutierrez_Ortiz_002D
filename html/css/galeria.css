@@ -4,6 +4,11 @@ main{
     align-items: center;
     flex-direction: column;
 }
+
+#a_galeria:hover{
+    color: black;
+}
+
 .bento{
     width: fit-content;
     height: fit-content;

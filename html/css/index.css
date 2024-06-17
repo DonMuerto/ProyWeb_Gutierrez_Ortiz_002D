@@ -5,6 +5,10 @@ main{
     margin-top: 46px;
 }
 
+#a_index:hover{
+    color: black;
+}
+
 .bento{
     width: 80%;
     max-width: 1200px;
