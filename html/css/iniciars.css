@@ -57,6 +57,7 @@ main{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     margin-top: 6px;
+    z-index: 1;
 }
 .titu{
     width: 100%;
@@ -69,6 +70,20 @@ main{
 .contrasena1{
     grid-area: contrasena1;
 }
+.caja_ojo{
+    grid-area: contrasena1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#ojo{
+    z-index: 2;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
 .olre{
     margin-top: 20px;
     grid-area: olre;

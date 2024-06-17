@@ -6,12 +6,12 @@ const expresiones = {
     password: /^.{4,12}$/ // 4 a 12 digitos.
 }
 
-
-
 const celdas = {
     email: false,
     password: false
 }
+
+let password = document.getElementById("password")
 
 $(document).ready(function(){
     $("#email").keyup(function(){
@@ -22,7 +22,17 @@ $(document).ready(function(){
         let password= $(this).val();
         validarCampo(expresiones.password, password ,"password");
     })
-
+    $("#ojo").click(function(){
+        let mucho_ojo = document.getElementById('ojo');
+        if (password.type === "password"){
+            password.type = "text";
+            mucho_ojo.src = "img/ojo_off.png"
+        }
+        else{
+            password.type = "password"
+            mucho_ojo.src = "img/ojo_on.png"
+        }
+    })
 })
 
 const validarCampo = (expresion, validar, campo) => {

@@ -61,6 +61,7 @@ main{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     margin-top: 6px;
+    z-index: 1;
 }
 .domicilio .linput{
     width: 100%;
@@ -101,8 +102,36 @@ main{
 .contrasena1{
     grid-area: contrasena1;
 }
+.caja_ojo{
+    grid-area: contrasena1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 .contrasena2{
     grid-area: contrasena2;
+}
+.caja_ojo2{
+    grid-area: contrasena2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#ojo{
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 9px;
+    z-index: 2;
+}
+#ojo2{
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 9px;
+    z-index: 2;
 }
 .termino{
     grid-area: termino;
@@ -175,12 +204,18 @@ main{
     }
     .domicilio{
         justify-self: center;
-        width: 280px
+        width: 280px;
     }
     .domicilio .inputStyle{
         width: 280px;
     }
     .isesion, .titu, .nombre, .genero, .papellido, .mapellido, .correo, .telefono, .contrasena1, .contrasena2, .termino, .button{
         justify-self: center;
+        border: 1px solid;
+    }
+    .caja_ojo, .caja_ojo2{
+        justify-self: center;
+        width: 280px;
+        border: 1px solid;
     }
 }

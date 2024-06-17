@@ -56,8 +56,32 @@ $(document).ready(function(){
         let celular= $(this).val();
         validarCampo(expresiones.celular, celular ,"celular");
     })
+    $("#ojo").click(function(){
+        let mucho_ojo = document.getElementById('ojo');
+        if (password.type === "password"){
+            password.type = "text";
+            mucho_ojo.src = "img/ojo_off.png"
+        }
+        else{
+            password.type = "password"
+            mucho_ojo.src = "img/ojo_on.png"
+        }
+    })
+    $("#ojo2").click(function(){
+        let mucho_ojo2 = document.getElementById('ojo2');
+        if (password2.type === "password"){
+            password2.type = "text";
+            mucho_ojo2.src = "img/ojo_off.png"
+        }
+        else{
+            password2.type = "password"
+            mucho_ojo2.src = "img/ojo_on.png"
+        }
+    })
 
 })
+
+
 
 const validarCampo = (expresion, validar, campo) => {
 
