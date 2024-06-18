@@ -3,6 +3,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+#a_carro:hover{
+    color: black;
+}
 
 .container_grid{
     width: 80%;
