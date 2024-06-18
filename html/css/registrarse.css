@@ -211,11 +211,9 @@ main{
     }
     .isesion, .titu, .nombre, .genero, .papellido, .mapellido, .correo, .telefono, .contrasena1, .contrasena2, .termino, .button{
         justify-self: center;
-        border: 1px solid;
     }
     .caja_ojo, .caja_ojo2{
         justify-self: center;
         width: 280px;
-        border: 1px solid;
     }
 }
