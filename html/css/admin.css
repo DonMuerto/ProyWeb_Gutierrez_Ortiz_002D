@@ -22,20 +22,20 @@ main{
 
 /* main*/
 .admin_grid{
-    width: 80%;
-    max-width: 1400px;
     height: 700px;
+    max-width: 1150px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 2fr ;
     gap: 16px ;
 	grid-template-areas: 
-		"nav dash"
+		"nav dash "
 		"nav board"
 	;
 }
 
 .nav{
+    width: 302px;
     grid-area: nav;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -64,6 +64,7 @@ li a:hover{
 
 
 .dash{
+    max-width: 830px;
     grid-area: dash;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -88,6 +89,7 @@ li a:hover{
 
 
 .board{
+    max-width: 830px;
     grid-area: board;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
