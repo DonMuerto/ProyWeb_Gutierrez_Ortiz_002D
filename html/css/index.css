@@ -140,8 +140,8 @@ main{
     grid-area: titulo;
     height: 100%;
     margin-right: 12px;
-    border-radius: 10px;
     text-align: center;
+    border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     background-color: #E1D2CF;
