@@ -6,7 +6,6 @@ main{
 }
 
 .container_grid{
-    border: 1px solid black;
     width: 80%;
     max-width: 1200px;
     height: 700px;
@@ -22,20 +21,28 @@ main{
 
 
 .titulo{
-    border: 1px solid black;
     grid-area: titulo;
 }
 .titulo h1{
     font-size: 49px;
 }
+
+
 .carrito{
-    border: 1px solid black;
     grid-area: carrito;
+}
+.tabla{
+    border-bottom: 6px solid #E1D2CF;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.tabla>div{
+    margin: 0px 4px 8px 4px;
 }
 
 
 .boleta{
-    border: 1px solid black;
     grid-area: boleta;
     display: flex;
     align-items: center;
@@ -43,11 +50,11 @@ main{
     gap: 16px;
     
 }
-h3{
+.boleta h3{
     margin-left: 16px;
     margin-right: 16px;
+    font-weight:200;
 }
-
 .data{
     flex: 1;
     width: 302px;
@@ -58,7 +65,6 @@ h3{
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     background-color: #E1D2CF;
 }
-
 .detalles{
     height: 60px;
     display: flex;
@@ -66,7 +72,6 @@ h3{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     background-color: #E1D2CF;
 }
-
 .datos_carro{
     flex: 1;
     background-color: #e4dad8;
@@ -77,7 +82,6 @@ h3{
 .text_data{
     margin-left: 16px;
 }
-
 .total{
     height: 60px;
     width: 100%;
@@ -92,8 +96,6 @@ h3{
     justify-content: flex-end;
     align-items: center;
 }
-
-
 .button{
     display: flex;
     align-items: center;
