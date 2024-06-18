@@ -86,6 +86,17 @@ li a:hover{
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
 }
+.caja {
+    text-align: center;
+}
+.caja h2{
+    margin: 16px;
+}
+.caja div{
+    margin: 22px;
+    font-size: 30px;
+    text-align: center;
+}
 
 
 .board{
