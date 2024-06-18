@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carro de compra</title>
+    <title>Usuario</title>
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/carro.css">
+    <link rel="stylesheet" href="css/usuario.css">
+
 </head>
 <body style="margin: 0 auto;">
     <header>
@@ -22,7 +23,7 @@
                 <a id="a_reservar" href="Reservar.html">Reservar</a>
             </div>
             <div class="nav_right">
-                <a id="a_registrarse" href="Usuario.html">Usuario</a>
+                <a id="a_usuario" href="Usuario.html">Usuario</a>
                 <a id="a_carro" style="margin-right: 12px;" href="Carro.html">Carro</a>
                 <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
             </div>
@@ -42,49 +43,25 @@
         </div>
     </header>
     <main>
-        <section class="container_grid">
-            <div class="titulo">
-                <h1>Tu carrito</h1>
+        <section class="admin_grid">
+            <div class="nav">
+                <h3>Navegación</h3>
+                <ul class="sin_puntos">
+                    <br>
+                    <li><img src="img\badge.png" alt=""><a href="">Informacion personal</a></li>
+                    <br>
+                    <li><img src="img\logout.png" alt=""><a href="Index.html">Cerrar sesión</a></li>
+                    <br>
+                </ul>
             </div>
-            <div class="carrito">
-                <div class="tabla">
-                    <div>
-                        Producto
-                    </div>
-                    <div>
-                        Precio
-                    </div>
-                    <div>
-                        Cantidad
-                    </div>
-                    <div>
-                        Total
-                    </div>
-                </div>
-            </div>
-            <div class="boleta">
-                <div class="data">
-                    <div class="detalles">
-                        <h3>Detalles del carrito</h3>
-                    </div>
-                    <div class="datos_carro">
-                        <div class="text_data">
-                        </div>
-                    </div>
-                    <div class="total">
-                        <div>
-                            <h3>Total:</h3>
-                        </div>
-                        <div id="valor_carrito">
-                            <h3>$0</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="button">
-                    <input type="submit" onclick="Enviar()" value="CHECKOUT" class="buttonStyle">
+            <div class="board">
+                <h3>Informacion personal</h3>
+                <div class="caja">
+
                 </div>
             </div>
         </section>
+    </main>
     </main>
     <footer>
         <div style="margin-left: 12px;" class="responsive">
