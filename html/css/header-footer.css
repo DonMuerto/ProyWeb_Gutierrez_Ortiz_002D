@@ -29,9 +29,6 @@ body{
     transition: all 0.3s ease;
 }
 
-
-
-
 .responsive{
     width: 80%;
     display: flex;
@@ -118,7 +115,6 @@ footer{
 .responsive:last-child{
     gap: 96px;
 }
-
 /* footer */
 
 .nav-list li{
