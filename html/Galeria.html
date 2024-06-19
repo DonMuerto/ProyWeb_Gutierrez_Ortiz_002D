@@ -6,45 +6,49 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/carro.css">
 </head>
 <body style="margin: 0 auto;">
-    <body>
     <header>
-        <div style="height: 90px;"></div>
-        <div class="blure"></div>
-        <div class="responsive">
-            <div class="logo">
-                <img style="height: 90px; width: 100px; margin-left: 12px;" src="img\fran.png" alt="LOGO">
-            </div>
-            <div class="nav_center">
-                <a id="a_index" href="Index.html">Inicio</a>
-                <a id="a_acerca" href="Acerca.html">Acerca</a>
-                <a id="a_galeria" href="Galeria.html">Galeria</a>
-                <a id="a_reservar" href="Reservar.html">Reservar</a>
-            </div>
-            <div class="nav_right">
-                <a id="a_registrarse" href="Registrarse.html">Registrarse</a>
-                <a id="a_iniciar" style="margin-right: 12px;" href="Iniciar_sesion.html">Iniciar sesión</a>
-                <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
-            </div>
+    <div style="height: 90px;"></div>
+    <div class="blure"></div>
+    <div class="responsive">
+        <div class="logo">
+            <img style="height: 90px; width: 100px; margin-left: 12px;" src="img\fran.png" alt="LOGO">
         </div>
-        <div class="burguer" id="burguer">
-            <button id="cerrar" class="btnMenu-cerrar"><img src="img\close.png" alt=""></button>
-            <div class="nav-list">
-                <ul>
-                    <li><a id="a_index" href="Index.html">Inicio</a></li>
-                    <li><a id="a_acerca" href="Acerca.html">Acerca</a></li>
-                    <li><a id="a_galeria" href="Galeria.html">Galeria</a></li>
-                    <li><a id="a_reservar" href="Reservar.html">Reservar</a></li>
-                    <li><a id="a_resgistrarse" href="Registrarse.html">Registrarse</a></li>
-                    <li><a id="a_iniciar" href="Iniciar_sesion.html">Iniciar sesion</a></li>
-                </ul>
-            </div>
+        <div class="nav_center">
+            <a id="a_index" href="Index.html">Inicio</a>
+            <a id="a_acerca" href="Acerca.html">Acerca</a>
+            <a id="a_galeria" href="Galeria.html">Galeria</a>
+            <a id="a_reservar" href="Reservar.html">Reservar</a>
         </div>
+        <div class="nav_right">
+            <a id="a_registrarse" href="Registrarse.html">Registrarse</a>
+            <a id="a_iniciar" style="margin-right: 12px;" href="Iniciar_sesion.html">Iniciar sesión</a>
+            <div class="icon-cart">
+                <img src="img\shopping_bag.png" style="height: 50px;" alt="">
+                <span>0</span>
+            </div>
+            <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
+        </div>
+    </div>
+    <div class="burguer" id="burguer">
+        <button id="cerrar" class="btnMenu-cerrar"><img src="img\close.png" alt=""></button>
+        <div class="nav-list">
+            <ul>
+                <li><a id="a_index" href="Index.html">Inicio</a></li>
+                <li><a id="a_acerca" href="Acerca.html">Acerca</a></li>
+                <li><a id="a_galeria" href="Galeria.html">Galeria</a></li>
+                <li><a id="a_reservar" href="Reservar.html">Reservar</a></li>
+                <li><a id="a_resgistrarse" href="Registrarse.html">Registrarse</a></li>
+                <li><a id="a_iniciar" href="Iniciar_sesion.html">Iniciar sesion</a></li>
+            </ul>
+        </div>
+    </div>
     </header>
-    <main>
+    <main class="container">
         <h1>Servicios</h1>
-        <section class="bento">
+        <section class="bento listProduct">
             <div class="balayage">
                 <a href="#openModal" class="linqfoto">
                     <span>Balayage</span>
@@ -55,7 +59,7 @@
                     <img style="width: 100%; height: 100%;" src="img\14ea41bb-14a5-4dc1-9253-33f1b7bdf5a8.jpg">
                 </a>
                 <div id="openModal" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Balayage
                             <h3>
                                 $100.000
@@ -66,6 +70,9 @@
                         </h2>
                         <a href="#close-cancelar" title="Close" class="close-cancelar">Cancelar</a>
                         <a href="Reservar.html" title="Close" class="close-reservar">Reservar</a>
+                        <button class="addCart">
+                            Añadir al carro
+                        </button>
                     </div>
                 </div>
             </section>
@@ -78,7 +85,7 @@
             <section class="contenedor_foto">
                 <a href="#openModa2"><img style="width: 100%; height: 100%;" src="img\36e6da14-4bfc-4b45-a3b8-9f9d02e85efa.jpg"></a>
                 <div id="openModa2" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Correccion
                             <h3 style="border: 2px solid; border-radius: 5px; padding: 3px">
                                 $140.000
@@ -104,7 +111,7 @@
             <section class="contenedor_foto">
                 <a  href="#openModa3"><img style="width: 100%; height: 100%;" src="img\0839daaa-c832-44dc-98c3-4e879bbf1482.jpg"></a>
                 <div id="openModa3" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Babylights
                             <h3 style="border: 2px solid; border-radius: 5px; padding: 3px">
                                 $100.000
@@ -127,7 +134,7 @@
             <section class="contenedor_foto">
                 <a href="#openModa4"><img style="width: 100%; height: 100%;" src="img\WhatsApp Image 2024-04-02 at 23.57.52.jpeg"></a>
                 <div id="openModa4" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Baño color
                             <h3 style="border: 2px solid; border-radius: 5px; padding: 3px">
                                 $30.000
@@ -150,7 +157,7 @@
             <section class="contenedor_foto">
                 <a href="#openModa5"><img style="width: 100%; height: 100%;" src="img\9132de40-fdef-47ab-ae90-64f9ac5fb9c0.jpg"></a>
                 <div id="openModa5" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Corte de pelo
                             <h3 style="border: 2px solid; border-radius: 5px; padding: 3px">
                                 $15.000
@@ -173,7 +180,7 @@
             <section class="contenedor_foto">
                 <a href="#openModa6"><img style="width: 100%; height: 100%;" src="img\WhatsApp Image 2024-04-03 at 00.02.34.jpeg"></a>
                 <div id="openModa6" class="modalDialog">
-                    <div class="modales">
+                    <div class="modales item">
                         <h2>Tratamiento capilar
                             <h3 style="border: 2px solid; border-radius: 5px; padding: 3px">
                                 $30.000
@@ -188,6 +195,31 @@
                 </div>
             </section>
         </section>
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                <div class="item">
+                    <div class="image">
+                        <img src="img\14ea41bb-14a5-4dc1-9253-33f1b7bdf5a8.jpg">
+                    </div>
+                    <div class="name">
+                        Balayage
+                    </div>  
+                    <div class="totalPrice">
+                        $100.000
+                    </div>
+                    <div class="quantity">
+                        <span class="minus">+</span>
+                        <span>1</span>
+                        <span class="plus">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="close">Cerrar</button>
+                <a style="display:contents;" href="Carro.html"><button class="checkOut">Encargar</button></a>
+            </div>
+        </div>
     </main>
     <footer>
         <div style="margin-left: 12px;" class="responsive">
@@ -224,5 +256,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JavaScript\hamburguer.js"></script>
+    <script src="JavaScript\carro.js"></script>
 </body>
 </html>
