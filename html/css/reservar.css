@@ -37,7 +37,7 @@ main{
         "nombre genero"
         "correo telefono"
         "domicilio domicilio"
-        "button button";
+        "button servicio";
     justify-content: space-between;
     gap: 30px;
 }
@@ -113,6 +113,9 @@ main{
     color: white;
     border: none;
     font-size: 18px;
+}
+.servicio{
+    grid-area: servicio;
 }
 
 
@@ -197,13 +200,14 @@ main{
         margin: 78px 40px;
         display: grid;
         grid-template-columns: 280px;
-        grid-template-rows: repeat(6, 70px) 1fr ;
+        grid-template-rows: repeat(7, 70px) 1fr ;
         grid-template-areas: 
             "titu"
             "nombre"
             "genero"
             "correo" 
             "telefono"
+            "servicio"
             "domicilio"
             "button ";
         gap: 16px;
