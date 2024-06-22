@@ -50,7 +50,6 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 16px;
-    
 }
 .boleta h3{
     margin-left: 16px;
@@ -124,4 +123,35 @@ main{
     color: white;
     border: none;
     font-size: 18px;
+}
+
+@media (width < 1000px){
+    .container_grid{
+        width: 80%;
+        max-width: 1200px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 500px 500px;
+        gap: 16px ;
+        grid-template-areas: 
+            "titulo titulo"
+            "carrito carrito"
+            "boleta boleta"
+        ;
+    }
+    .boleta{
+        flex-direction: row;
+        align-items: start;
+    }
+    .data{
+        height: 100%;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        gap: 46px;
+    }
 }

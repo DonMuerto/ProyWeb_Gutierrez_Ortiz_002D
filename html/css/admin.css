@@ -23,7 +23,7 @@ main{
 /* main*/
 .admin_grid{
     height: 700px;
-    max-width: 1150px;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 2fr ;
@@ -64,7 +64,7 @@ li a:hover{
 
 
 .dash{
-    max-width: 830px;
+    width:fit-content ;
     grid-area: dash;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -100,7 +100,6 @@ li a:hover{
 
 
 .board{
-    max-width: 830px;
     grid-area: board;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -199,4 +198,53 @@ footer{
 /* footer */
 .responsive a:hover{
     color: #DD7D6C;
+}
+
+@media (width < 1300px){
+    .admin_grid{
+        height: 700px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 350px 1fr 1fr;
+        gap: 16px ;
+        grid-template-areas: 
+            "nav dash "
+            "board board"
+            "board board"
+        ;
+    }
+    .dash{
+        grid-area: dash;
+    }
+    .caja_padre{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .caja:first-child{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 162px;
+        width: 200px;
+    }
+    .caja{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 162px;
+        width: 200px;
+    }
+    .caja:last-child{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        height: 96px;
+        width: 416px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .board{
+        grid-area: board;
+        width: 770px;
+    }
 }
