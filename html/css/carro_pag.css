@@ -10,15 +10,20 @@ main{
 .container_grid{
     width: 80%;
     max-width: 1200px;
-    height: 700px;
+    height: fit-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 5fr ;
+    grid-template-rows: 100px 5fr ;
     gap: 16px ;
 	grid-template-areas: 
 		"titulo titulo"
 		"carrito boleta"
 	;
+}
+#tb_carrito img{
+    height: 80px;
+    border-radius: 4px;
+	outline: 2px #5a4745 solid;
 }
 
 
@@ -33,18 +38,25 @@ main{
 .carrito{
     grid-area: carrito;
 }
-.tabla{
-    border-bottom: 6px solid #E1D2CF;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
-.tabla>div{
-    margin: 0px 4px 8px 4px;
+th{
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+}
+th, td {
+    height: 50px;
+    border-bottom: 4px solid rgb(221, 200, 200);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
 }
 
 
 .boleta{
+    height: 500px;
     grid-area: boleta;
     display: flex;
     align-items: center;
@@ -125,14 +137,14 @@ main{
     font-size: 18px;
 }
 
-@media (width < 1000px){
+@media (width < 1200px){
     .container_grid{
         width: 80%;
         max-width: 1200px;
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 500px 500px;
+        grid-template-rows: 1fr fit-content 500px;
         gap: 16px ;
         grid-template-areas: 
             "titulo titulo"
@@ -141,6 +153,7 @@ main{
         ;
     }
     .boleta{
+        margin-top: 16px;
         flex-direction: row;
         align-items: start;
     }
