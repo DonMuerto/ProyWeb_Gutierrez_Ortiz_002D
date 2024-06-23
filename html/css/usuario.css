@@ -51,7 +51,7 @@ li a:hover{
 
 
 .caja{
-    height: 300px;
+    height: fit-content;
     width: 96%;
     border-radius: 10px;
     background-color: #faf5f4;
@@ -69,7 +69,23 @@ li a:hover{
     font-size: 30px;
     text-align: center;
 }
-
+.caja a{
+    display: block;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caja a div{
+    font-size: 20px;
+    color: black;
+}
+.caja a:hover div{
+    color: #dd6e5a;
+}
 
 .board{
     max-width: 830px;
