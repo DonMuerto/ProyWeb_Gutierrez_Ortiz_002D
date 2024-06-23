@@ -67,12 +67,11 @@ const validarCampo = (expresion, validar, campo) => {
 
 
 formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
     
 
     if(celdas.nombre && celdas.email && celdas.celular && celdas.servicio){
-        
+        console.log("se envio")
+
             emailjs.send("service_nt2wwvc","template_t4zqlsn",{
                 name: String(document.getElementById('nombre').value),
                 gender: String(document.getElementById('Genero').value),
@@ -96,10 +95,15 @@ formulario.addEventListener('submit', (e) => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
     }else {
+
+        e.preventDefault();
+        console.log("no se deberia de enviar")
+        
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		}, 5000);
+        
 	}
 
 });
