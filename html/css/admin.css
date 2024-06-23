@@ -80,17 +80,16 @@ main{
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
         "reservas servicios"
         "reservas servicios"
-        "carrusel carrusel"
     ;
     gap: 16px;
 }
 
 .reservas{
-    height: fit-content;
+    height: 400x;
     grid-area: reservas;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -98,15 +97,8 @@ main{
     background-color: #E1D2CF;
 }
 .servicios{
-    height: fit-content;
+    height: 400x;
     grid-area: servicios;
-    border-radius: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: #E1D2CF;
-}
-.carrusel{
-    grid-area: carrusel;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
@@ -115,11 +107,48 @@ main{
 
 .tabla{
     margin: 16px;
-    height: 392px;
+    height: 357px;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
     border-right: 1px solid rgba(0, 0, 0, 0.178);
     background-color: #FAF5F4;
+    overflow: hidden;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+}
+th, td {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 16px;
+    text-align: left;
+}
+.pagination{
+    margin: 0 16px 16px 16px;
+    gap: 8px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.pagination button{
+    height: 30px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 6px;
+    background-color: #FAF5F4;
+}
+#page{
+    border: 1px solid rgb(184, 184, 184);
+    background-color: #FAF5F4;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -163,12 +192,22 @@ footer{
         height: fit-content;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
             "reservas"
             "servicios"
-            "carrusel"
         ;
         gap: 16px;
+    }
+}
+@media (width < 650px){
+    .admin_grid{
+        height: fit-content;
+    }
+    .tabla{
+        height: fit-content;
+    }
+    .servicios{
+        height: fit-content;
     }
 }

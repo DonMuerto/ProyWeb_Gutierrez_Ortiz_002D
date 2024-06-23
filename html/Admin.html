@@ -25,20 +25,135 @@
             <div class="reservas">
                 <h3>Reservas</h3>
                 <div class="tabla">
-
+                    <table id="tb_reservas">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Servicio</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Consultoría</td>
+                                <td>2023-06-01</td>
+                                <td>Completado</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Gómez</td>
+                                <td>Desarrollo Web</td>
+                                <td>2023-06-15</td>
+                                <td>En Proceso</td>
+                            </tr>
+                            <tr>
+                                <td>Mario López</td>
+                                <td>Soporte Técnico</td>
+                                <td>2023-06-20</td>
+                                <td>Pendiente</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Consultoría</td>
+                                <td>2023-06-01</td>
+                                <td>Completado</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Gómez</td>
+                                <td>Desarrollo Web</td>
+                                <td>2023-06-15</td>
+                                <td>En Proceso</td>
+                            </tr>
+                            <tr>
+                                <td>Mario López</td>
+                                <td>Soporte Técnico</td>
+                                <td>2023-06-20</td>
+                                <td>Pendiente</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Consultoría</td>
+                                <td>2023-06-01</td>
+                                <td>Completado</td>
+                            </tr>
+                            <tr>
+                                <td>Ana Gómez</td>
+                                <td>Desarrollo Web</td>
+                                <td>2023-06-15</td>
+                                <td>En Proceso</td>
+                            </tr>
+                            <tr>
+                                <td>Mario López</td>
+                                <td>Soporte Técnico</td>
+                                <td>2023-06-20</td>
+                                <td>Pendiente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <button id="prevBtn" onclick="prevPage()">Anterior</button>
+                    <span id="page">1</span>
+                    <button id="nextBtn" onclick="nextPage()">Siguiente</button>
                 </div>
             </div>
             <div class="servicios">
                 <h3>Servicios</h3>
                 <div class="tabla">
-
+                    <table id="tb_servicios">
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Stock</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Balayage</td>
+                                <td>7</td>
+                                <td>$100.000</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>Corte de pelo</td>
+                                <td>10</td>
+                                <td>$15.000</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>Tratamiento capilar</td>
+                                <td>5</td>
+                                <td>$30.000</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>Babylights</td>
+                                <td>6</td>
+                                <td>$100.000</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>Correción</td>
+                                <td>2</td>
+                                <td>$140.000</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>Baño color</td>
+                                <td>10</td>
+                                <td>$30.000</td>
+                                <td>Editar</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-            <div class="carrusel">
-                <h3>On Display</h3>
             </div>
         </div>
     </main>
+    <div style="height: 90px;"></div>
     <footer>
         <div style="margin-left: 12px;" class="responsive">
             <div class="cajas_footer">
@@ -72,5 +187,6 @@
             </div>
         </div>   
     </footer>
+    <script src="JavaScript\paginacion.js"></script>
 </body>
 </html>
