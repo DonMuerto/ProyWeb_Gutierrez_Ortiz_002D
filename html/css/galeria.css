@@ -203,7 +203,6 @@ main{
 	background: #372825;
 	color: #FFFFFF;
 	margin-top: 10px;
-	margin-bottom: 36px;
 	line-height: 25px;
 	position: relative;
 	text-align: center;
@@ -214,6 +213,9 @@ main{
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	transition: all 0.1s ease;
+}
+.close-reservar:last-child{
+	margin-bottom: 10px;
 }
 
 

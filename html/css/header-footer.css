@@ -18,7 +18,7 @@ h2{
     font-weight: 400;
 }
 body{
-    background-color:#FAF5F4;
+    background-color:#ffffff;
 }
 .inputStyle{
     background-color:#FAF5F4;
@@ -28,9 +28,6 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-
-
 
 .responsive{
     width: 80%;
@@ -89,10 +86,29 @@ header .responsive{
     gap: 30px;
 }
 
+.icon-cart{
+    position: relative;
+    z-index: 4;
+}
+.icon-cart span{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #372825;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -15%;
+}
+
 /* header */
 
 /* footer */
 footer{
+    margin-bottom: 0;
     margin-top: 46px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -118,7 +134,6 @@ footer{
 .responsive:last-child{
     gap: 96px;
 }
-
 /* footer */
 
 .nav-list li{

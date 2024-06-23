@@ -9,112 +9,6 @@ h2{
     font-size: 32px;
     font-weight: 400;
 }
-body{
-    background-color:#FAF5F4;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 46px;
-}
-
-/* main*/
-.admin_grid{
-    height: 700px;
-    max-width: 1150px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr ;
-    gap: 16px ;
-	grid-template-areas: 
-		"nav dash "
-		"nav board"
-	;
-}
-
-.nav{
-    width: 302px;
-    grid-area: nav;
-    border-radius: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: #E1D2CF;
-}
-.nav>*{
-    margin: 16px;
-}
-ul.sin_puntos {
-    list-style-type: none;           
-}
-img {
-    height: 24px;
-}
-li a{
-    margin-left: 8px;
-    vertical-align:super;
-    text-decoration: none;
-    color: rgb(59, 59, 59);
-}
-li a:hover{
-    color: #dd6e5a;
-}
-
-
-
-.dash{
-    max-width: 830px;
-    grid-area: dash;
-    border-radius: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: #E1D2CF;
-}
-.dash>*{
-    margin: 16px;
-}
-.caja_padre{
-    display: flex;
-    gap: 16px;
-}
-.caja{
-    height: 182px;
-    width: 256px;
-    border-radius: 10px;
-    background-color: #faf5f4;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-}
-.caja {
-    text-align: center;
-}
-.caja h2{
-    margin: 16px;
-}
-.caja div{
-    margin: 22px;
-    font-size: 30px;
-    text-align: center;
-}
-
-
-.board{
-    max-width: 830px;
-    grid-area: board;
-    border-radius: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: #E1D2CF;
-}
-.board>*{
-    margin: 16px;
-}
-
-
-
-/* main*/
-
 
 .responsive{
     width: 80%;
@@ -157,7 +51,6 @@ header .responsive{
     width: 500px;
 }
 
-
 .nav_right{
     display: flex;
     justify-content: flex-end;
@@ -167,6 +60,99 @@ header .responsive{
 }
 
 /* header */
+
+/* main */
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.admin_grid{
+    width: 80%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "reservas servicios"
+        "reservas servicios"
+    ;
+    gap: 16px;
+}
+
+.reservas{
+    height: 400x;
+    grid-area: reservas;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
+}
+.servicios{
+    height: 400x;
+    grid-area: servicios;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #E1D2CF;
+}
+
+.tabla{
+    margin: 16px;
+    height: 357px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #FAF5F4;
+    overflow: hidden;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    color: rgb(88, 88, 88);
+    font-weight: 400;
+}
+th, td {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 16px;
+    text-align: left;
+}
+.pagination{
+    margin: 0 16px 16px 16px;
+    gap: 8px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.pagination button{
+    height: 30px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 6px;
+    background-color: #FAF5F4;
+}
+#page{
+    border: 1px solid rgb(184, 184, 184);
+    background-color: #FAF5F4;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* main */
 
 /* footer */
 footer{
@@ -199,4 +185,29 @@ footer{
 /* footer */
 .responsive a:hover{
     color: #DD7D6C;
+}
+
+@media (width < 1300px){
+    .admin_grid{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "reservas"
+            "servicios"
+        ;
+        gap: 16px;
+    }
+}
+@media (width < 650px){
+    .admin_grid{
+        height: fit-content;
+    }
+    .tabla{
+        height: fit-content;
+    }
+    .servicios{
+        height: fit-content;
+    }
 }

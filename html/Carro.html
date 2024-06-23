@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carro de compra</title>
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/carro.css">
+    <link rel="stylesheet" href="css/carro_pag.css">
 </head>
 <body style="margin: 0 auto;">
     <header>
@@ -23,7 +23,12 @@
             </div>
             <div class="nav_right">
                 <a id="a_registrarse" href="Usuario.html">Usuario</a>
-                <a id="a_carro" style="margin-right: 12px;" href="Carro.html">Carro</a>
+                <a style="display: block" href="Carro.html">
+                    <div class="icon-cart">
+                        <img src="img\shopping_bag.png" style="height: 50px;" alt="">
+                        <span>0</span>
+                    </div>
+                </a>
                 <button id="abrir" class="btnMenu-abrir"><img src="img\menu.png" alt=""></button>
             </div>
         </div>
@@ -47,20 +52,61 @@
                 <h1>Tu carrito</h1>
             </div>
             <div class="carrito">
-                <div class="tabla">
-                    <div>
-                        Producto
-                    </div>
-                    <div>
-                        Precio
-                    </div>
-                    <div>
-                        Cantidad
-                    </div>
-                    <div>
-                        Total
-                    </div>
-                </div>
+                <table id="tb_carrito">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Balayage</td>
+                            <td>$100.000</td>
+                            <td>1</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Corte de pelo</td>
+                            <td>$15.000</td>
+                            <td>2</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Tratamiento capilar</td>
+                            <td>$30.000</td>
+                            <td>3</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Babylights</td>
+                            <td>$100.000</td>
+                            <td>1</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Correción</td>
+                            <td>$140.000</td>
+                            <td>2</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img\2bb4912d-acf5-472c-a3f9-7c93d7425d24.jpg" alt=""></td>
+                            <td>Baño color</td>
+                            <td>$30.000</td>
+                            <td>3</td>
+                            <td>$100.000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="boleta">
                 <div class="data">
@@ -69,6 +115,7 @@
                     </div>
                     <div class="datos_carro">
                         <div class="text_data">
+                            aqui todo el texto
                         </div>
                     </div>
                     <div class="total">

@@ -17,8 +17,7 @@ main{
     grid-template-rows: 1fr 1fr ;
     gap: 16px ;
 	grid-template-areas: 
-		"nav board "
-	;
+        "nav board ";
 }
 
 .nav{
@@ -52,7 +51,7 @@ li a:hover{
 
 
 .caja{
-    height: 300px;
+    height: fit-content;
     width: 96%;
     border-radius: 10px;
     background-color: #faf5f4;
@@ -70,7 +69,23 @@ li a:hover{
     font-size: 30px;
     text-align: center;
 }
-
+.caja a{
+    display: block;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caja a div{
+    font-size: 20px;
+    color: black;
+}
+.caja a:hover div{
+    color: #dd6e5a;
+}
 
 .board{
     max-width: 830px;
@@ -83,7 +98,20 @@ li a:hover{
 .board>*{
     margin: 16px;
 }
-
-
-
 /* main*/
+
+@media (width < 1000px){
+    .admin_grid{
+        height: 600px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 200px 400px ;
+        gap: 16px ;
+        grid-template-areas: 
+            "nav nav"
+            "board board"
+            "board board"
+        ;
+    }
+}
