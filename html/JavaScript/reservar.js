@@ -9,7 +9,8 @@ const expresiones = {
 
 var genero = "Otro";
 let selectGenero = document.getElementById('Genero');
-
+let servicio = "--"
+let selectServicio = document.getElementById('servicio');
 
 selectGenero.addEventListener('change', function() {
     genero = selectGenero.value; 
@@ -19,8 +20,20 @@ selectGenero.addEventListener('change', function() {
 const celdas = {
     nombre: false,
     email: false,
-    celular: false
+    celular: false,
+    servicio: false
 }
+
+selectServicio.addEventListener('change', function() {
+    servicio = selectServicio.value;
+    if (servicio == "--"){
+        celdas.servicio = false;
+    }else{
+        celdas.servicio = true;
+    } 
+});
+
+
 
 $(document).ready(function(){
     $("#nombre").keyup(function(){
@@ -35,7 +48,6 @@ $(document).ready(function(){
         let celular= $(this).val();
         validarCampo(expresiones.celular, celular ,"celular");
     })
-
 })
 
 const validarCampo = (expresion, validar, campo) => {
@@ -56,10 +68,10 @@ const validarCampo = (expresion, validar, campo) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    
     
 
-    if(celdas.nombre && celdas.email && celdas.celular ){
+    if(celdas.nombre && celdas.email && celdas.celular && celdas.servicio){
         
             emailjs.send("service_nt2wwvc","template_t4zqlsn",{
                 name: String(document.getElementById('nombre').value),
