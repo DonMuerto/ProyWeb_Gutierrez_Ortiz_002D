@@ -77,7 +77,7 @@ main{
 
 .admin_grid{
     width: 80%;
-    height: 780px;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -90,6 +90,7 @@ main{
 }
 
 .reservas{
+    height: fit-content;
     grid-area: reservas;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -97,6 +98,7 @@ main{
     background-color: #E1D2CF;
 }
 .servicios{
+    height: fit-content;
     grid-area: servicios;
     border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.178);
