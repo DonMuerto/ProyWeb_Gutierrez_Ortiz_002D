@@ -86,6 +86,24 @@ header .responsive{
     gap: 30px;
 }
 
+.icon-cart{
+    position: relative;
+    z-index: 4;
+}
+.icon-cart span{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #372825;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -15%;
+}
+
 /* header */
 
 /* footer */
