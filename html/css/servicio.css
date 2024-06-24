@@ -1,0 +1,159 @@
+*{
+    font-family:'Times New Roman', Times, sans-serif;
+}
+h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+body{
+    background-color:#ffffff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.container{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #faf5f4;
+    height: fit-content;
+    width: 1000px;
+}
+
+#a_usuario{
+    font-size: 24px;
+}
+
+form{
+    padding: 16px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo"
+        "nombre precio"
+        "stock descripcion"
+    ;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+.nombre{
+    grid-area: nombre;
+}
+.precio{
+    grid-area: precio;
+}
+.stock{
+    grid-area: stock;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.linput{
+    margin-top: 16px;
+    height: 76px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.inputStyle{
+    background-color: #fff;
+    height: 46px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 6px;
+    z-index: 1;
+}
+
+
+
+/* header*/
+
+.responsive{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.responsive a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blure{
+    top: 0;
+    width: 100%;
+    background-color: #FAF5F4;
+    height: 100px;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    z-index: 3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+header .responsive{
+    background-color: transparent;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo{
+    display: flex;
+    width: 340px;
+}
+
+.nav_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 388px;
+    gap: 30px;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 388px;
+    gap: 30px;
+}
+/* header */
+
+@media (width < 800px){
+    form{
+        padding: 16px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 80px 80px 80px;
+        grid-template-areas: 
+            "titulo"
+            "nombre"
+            "precio"
+            "stock"
+            "descripcion"
+
+        ;
+    }
+}

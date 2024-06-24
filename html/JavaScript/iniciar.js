@@ -22,15 +22,40 @@ $(document).ready(function(){
         let password= $(this).val();
         validarCampo(expresiones.password, password ,"password");
     })
-    $("#ojo").click(function(){
-        let mucho_ojo = document.getElementById('ojo');
+    $("#ojo_on").click(function(){
+        let mucho_ojo_on = document.getElementById('ojo_on');
+        let mucho_ojo_off = document.getElementById('ojo_off');
         if (password.type === "password"){
             password.type = "text";
-            mucho_ojo.src = "img/ojo_off.png"
+            mucho_ojo_on.classList.remove("seen")
+            mucho_ojo_on.classList.add("hid")
+            mucho_ojo_off.classList.add("seen")
+            mucho_ojo_off.classList.remove("hid")
         }
         else{
             password.type = "password"
-            mucho_ojo.src = "img/ojo_on.png"
+            mucho_ojo_on.classList.remove("hid")
+            mucho_ojo_on.classList.add("seen")
+            mucho_ojo_off.classList.add("hid")
+            mucho_ojo_off.classList.remove("seen")
+        }
+    })
+    $("#ojo_off").click(function(){
+        let mucho_ojo_on = document.getElementById('ojo_on');
+        let mucho_ojo_off = document.getElementById('ojo_off');
+        if (password.type === "password"){
+            password.type = "text";
+            mucho_ojo_on.classList.remove("seen")
+            mucho_ojo_on.classList.add("hid")
+            mucho_ojo_off.classList.add("seen")
+            mucho_ojo_off.classList.remove("hid")
+        }
+        else{
+            password.type = "password"
+            mucho_ojo_on.classList.remove("hid")
+            mucho_ojo_on.classList.add("seen")
+            mucho_ojo_off.classList.add("hid")
+            mucho_ojo_off.classList.remove("seen")
         }
     })
 })
