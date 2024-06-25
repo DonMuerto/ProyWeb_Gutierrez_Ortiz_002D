@@ -12,75 +12,6 @@ h2{
 body{
     background-color:#ffffff;
 }
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 46px;
-}
-
-.container{
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.178);
-    background-color: #faf5f4;
-    height: fit-content;
-    width: 1000px;
-}
-
-#a_usuario{
-    font-size: 24px;
-}
-
-form{
-    padding: 16px;
-    gap: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas: 
-        "titulo titulo"
-        "nombre precio"
-        "stock descripcion"
-    ;
-}
-
-.titulo{
-    grid-area: titulo;
-}
-.nombre{
-    grid-area: nombre;
-}
-.precio{
-    grid-area: precio;
-}
-.stock{
-    grid-area: stock;
-}
-.descripcion{
-    grid-area: descripcion;
-}
-.linput{
-    margin-top: 16px;
-    height: 76px;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-}
-.inputStyle{
-    background-color: #fff;
-    height: 46px;
-    width: 100%;
-    border-style: none;
-    border-radius: 5px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
-    margin-top: 6px;
-    z-index: 1;
-}
-
-
-
 /* header*/
 
 .responsive{
@@ -139,21 +70,126 @@ header .responsive{
     gap: 30px;
 }
 /* header */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
 
+.container{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: #faf5f4;
+    height: fit-content;
+    width: 1000px;
+}
+
+#a_usuario{
+    font-size: 24px;
+}
+
+form{
+    padding: 16px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: 
+        "titulo titulo"
+        "nombre precio"
+        "stock imagen"
+        "descripcion imagen"
+    ;
+}
+
+.imagen{
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    grid-area: titulo;
+}
+.nombre{
+    grid-area: nombre;
+}
+.precio{
+    grid-area: precio;
+}
+.stock{
+    grid-area: stock;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.linput{
+    margin-top: 16px;
+    height: 76px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.inputStyle{
+    background-color: #fff;
+    height: 46px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+    margin-top: 6px;
+    z-index: 1;
+}
+.button{
+    grid-area: button;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.buttonStyle{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 144px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 14px;
+    background: #372825;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.buttonStyle:hover{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 148px;
+    height: 65px;
+    font-size: 16px;
+    border-radius: none ;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
 @media (width < 800px){
     form{
         padding: 16px;
         gap: 30px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 80px 80px 80px;
+        grid-template-rows: 100px 80px 80px 80px 1fr;
         grid-template-areas: 
             "titulo"
             "nombre"
             "precio"
             "stock"
             "descripcion"
-
+            "imagen"
         ;
+    }
+    .imagen{
+        grid-area: imagen;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }
